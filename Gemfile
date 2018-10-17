@@ -15,6 +15,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'webpacker', '~> 3.5'
 
 group :development, :test do
+  gem 'coveralls', require: false
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'rspec-rails'
