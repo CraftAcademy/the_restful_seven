@@ -16,7 +16,7 @@
 
 .grid-container {
   display: grid;
-  height: 80vh;
+  height: 90vh;
   grid-gap: 30px;
   margin: 20px;
   padding: 5px;
@@ -26,3 +26,9 @@
     'breaking-news breaking-news breaking-news news-feed'
     'subscribe comments rated-articles news-feed';
 } 
+
+.footer {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
