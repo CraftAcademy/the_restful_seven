@@ -33,8 +33,3 @@ Capybara.server = :puma
 Capybara.javascript_driver = :chrome
 
 World(FactoryBot::Syntax::Methods)
-
-# Simplify User management
-Warden.test_mode!
-World Warden::Test::Helpers
-After { Warden.test_reset! }
