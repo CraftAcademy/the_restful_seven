@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: the_restful_seven_development
+
+test:
+  <<: *default
+  database: the_restful_seven_test
+
+production:
+  <<: *default
+  database: the_restful_seven_production
+  username: the_restful_seven
+  password: <%= ENV['THE_RESTFUL_SEVEN_DATABASE_PASSWORD'] %>
