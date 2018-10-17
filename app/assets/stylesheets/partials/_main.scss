@@ -1,0 +1,28 @@
+.breaking-news { 
+  border: solid black;
+  grid-area: breaking-news; }
+.news-feed { 
+  border: solid black;
+  grid-area: news-feed; }
+.subscribe { 
+  border: solid black;
+  grid-area: subscribe; }
+.comments { 
+  border: solid black;
+  grid-area: comments; }
+.rated-articles { 
+  border: solid black;
+  grid-area: rated-articles; }
+
+.grid-container {
+  display: grid;
+  height: 80vh;
+  grid-gap: 30px;
+  margin: 20px;
+  padding: 5px;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas:
+    'breaking-news breaking-news breaking-news news-feed'
+    'subscribe comments rated-articles news-feed';
+} 
