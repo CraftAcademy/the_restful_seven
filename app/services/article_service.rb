@@ -15,6 +15,6 @@ module FeedsService
                             from: Date.today,
                             to: month,
                             language: 'en',
-                            sortBy: 'relevancy'))
+                            sortBy: 'relevancy')
   end
 end
