@@ -8,7 +8,7 @@ development:
   <<: *default
   database: the_restful_seven_development
 
-test:
+test: &test
   <<: *default
   database: the_restful_seven_test
 
@@ -17,3 +17,5 @@ production:
   database: the_restful_seven_production
   username: the_restful_seven
   password: <%= ENV['THE_RESTFUL_SEVEN_DATABASE_PASSWORD'] %>
+cucumber:
+  <<: *test

@@ -12,7 +12,19 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'turbolinks', '~> 5'
 gem 'bootsnap', '>= 1.1.0', require: false
-gem 'webpacker', '~> 3.5'
+
+group :development, :test do
+  gem 'coveralls', require: false
+  gem 'pry-byebug'
+  gem 'pry-rails'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
+  gem 'factory_bot_rails'
+  gem 'cucumber-rails', '~> 1.6', require: false
+  gem 'database_cleaner'
+  gem 'chromedriver-helper'
+  gem 'selenium-webdriver'
+end
 
 group :development do
   gem 'web-console', '>= 3.3.0'
