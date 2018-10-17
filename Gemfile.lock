@@ -136,6 +136,7 @@ GEM
     msgpack (1.2.4)
     multi_json (1.13.1)
     multi_test (0.1.2)
+    news-api (0.0.0)
     nio4r (2.3.1)
     nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
@@ -269,6 +270,7 @@ DEPENDENCIES
   factory_bot_rails
   ffi (~> 1.9.24)
   listen (>= 3.0.5, < 3.2)
+  news-api
   pg (>= 0.18, < 2.0)
   pry-byebug
   pry-rails
