@@ -10,8 +10,12 @@ Feature: Setting up news feed from API
 
     Scenario: User should see articles from news_api
         Then I should see "Latest News"
-        Then stop
         And I should see '.article-title' element
         And I should see '.article-content' element
-        And I should see '.article-author' element
+        And I should see '.article-agency' element
+
+    Scenario: User should see a top news item from news_api
+        Then I should see "Top News"
+        And I should see '.article-title' element
+        And I should see '.article-content' element
         And I should see '.article-agency' element

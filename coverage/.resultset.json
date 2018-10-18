@@ -1,74 +1,87 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/Users/danmalmx/CraftAcademy/Week_8/the_restful_seven/app/controllers/api_feeds_controller.rb": [
+      "/Users/WTFwerewolf/Projects/the_restful_seven/app/controllers/api_feed_controller.rb": [
         1,
         null,
         1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/danmalmx/CraftAcademy/Week_8/the_restful_seven/app/services/feeds_service.rb": [
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
+        2,
+        2,
         null,
         null,
         null
       ],
-      "/Users/danmalmx/CraftAcademy/Week_8/the_restful_seven/app/controllers/application_controller.rb": [
+      "/Users/WTFwerewolf/Projects/the_restful_seven/app/controllers/application_controller.rb": [
         1,
         null
       ],
-      "/Users/danmalmx/CraftAcademy/Week_8/the_restful_seven/app/helpers/application_helper.rb": [
+      "/Users/WTFwerewolf/Projects/the_restful_seven/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/danmalmx/CraftAcademy/Week_8/the_restful_seven/app/mailers/application_mailer.rb": [
+      "/Users/WTFwerewolf/Projects/the_restful_seven/app/services/feed_service.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/WTFwerewolf/Projects/the_restful_seven/app/channels/application_cable/channel.rb": [
         0,
         0,
         0,
         0
       ],
-      "/Users/danmalmx/CraftAcademy/Week_8/the_restful_seven/app/models/application_record.rb": [
-        0,
-        0,
-        0
-      ],
-      "/Users/danmalmx/CraftAcademy/Week_8/the_restful_seven/app/jobs/application_job.rb": [
-        0,
-        0
-      ],
-      "/Users/danmalmx/CraftAcademy/Week_8/the_restful_seven/app/channels/application_cable/connection.rb": [
+      "/Users/WTFwerewolf/Projects/the_restful_seven/app/channels/application_cable/connection.rb": [
         0,
         0,
         0,
         0
       ],
-      "/Users/danmalmx/CraftAcademy/Week_8/the_restful_seven/app/channels/application_cable/channel.rb": [
+      "/Users/WTFwerewolf/Projects/the_restful_seven/app/jobs/application_job.rb": [
         0,
+        0
+      ],
+      "/Users/WTFwerewolf/Projects/the_restful_seven/app/mailers/application_mailer.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/WTFwerewolf/Projects/the_restful_seven/app/models/application_record.rb": [
         0,
         0,
         0
       ]
     },
-    "timestamp": 1539868341
+    "timestamp": 1539870792
   }
 }

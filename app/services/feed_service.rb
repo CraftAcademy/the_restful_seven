@@ -11,11 +11,23 @@ module FeedService
     newsapi = News.new(Rails.application.credentials.news[:api_key])
     newsapi.get_everything(q: query,
                             sources: source,
-                            domains: domain)
-                            # from: Date.today,
-                            # to: month,
-                            #  language: 'en''se')
+                            domains: domain,
+                            language: 'en')
                             # sortBy: 'relevancy')
                             
   end
+
+  def self.top_news(query, source, domain)
+    newsapi = News.new(Rails.application.credentials.news[:api_key])
+    newsapi.get_everything(q: query,
+                           sources: source,
+                           domains: domain,
+                           language: 'en',
+                           pageSize: 1)
+
+  end
 end
+
+
+                            # from: Date.today,
+                            # to: month,
