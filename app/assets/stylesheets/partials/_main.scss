@@ -1,6 +1,9 @@
 .breaking-news { 
   border: solid black;
-  grid-area: breaking-news; }
+  grid-area: breaking-news;
+  overflow: hidden;
+}
+  
 .news-feed { 
   border: solid black;
   grid-area: news-feed; }
