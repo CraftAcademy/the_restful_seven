@@ -1,31 +1,47 @@
-.breaking-news { 
-  
-  grid-area: breaking-news;
-  overflow: hidden;
-  display: grid;
-  justify-content: center;
-  
-  align-content: space-around;
-  
- 
-}
 body {
   font-family: 'Share Tech', sans-serif;
 }
 
+.grid-item {
+  height: 200px;  
+  width: 90%
+}
+
+.breaking-news {   
+  grid-area: breaking-news;
+  overflow: hidden;
+  display: grid;
+  justify-content: center;  
+  align-content: start;
+  h1 {
+    margin: 20px;
+  }
+}
   
 .news-feed { 
-  border: solid black;
-  grid-area: news-feed; }
+  grid-area: news-feed;   
+  overflow: scroll;
+  display: grid;
+  justify-content: center;
+  align-content: start;
+  h1 {
+    margin: 20px;
+  }
+}
 .subscribe { 
-  border: solid black;
-  grid-area: subscribe; }
+  border: dashed black;
+  grid-area: subscribe; 
+}
+
 .comments { 
-  border: solid black;
-  grid-area: comments; }
+  border: dashed black;
+  grid-area: comments; 
+}
+
 .rated-articles { 
-  border: solid black;
-  grid-area: rated-articles; }
+  border: dashed black;
+  grid-area: rated-articles; 
+}
 
 .grid-container {
   display: grid;
@@ -38,7 +54,9 @@ body {
   grid-template-areas:
     'breaking-news breaking-news breaking-news news-feed'
     'subscribe comments rated-articles news-feed';
-} 
+}
+
+
 
 .footer {
   font-size: 20px;
