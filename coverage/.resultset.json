@@ -1,7 +1,7 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/Users/WTFwerewolf/Projects/the_restful_seven/app/controllers/api_feed_controller.rb": [
+      "/Users/noel/news_app/app/controllers/api_feed_controller.rb": [
         1,
         null,
         1,
@@ -11,41 +11,24 @@
         null,
         null
       ],
-      "/Users/WTFwerewolf/Projects/the_restful_seven/app/controllers/application_controller.rb": [
+      "/Users/noel/news_app/app/controllers/application_controller.rb": [
         1,
         null
       ],
-      "/Users/WTFwerewolf/Projects/the_restful_seven/app/helpers/application_helper.rb": [
+      "/Users/noel/news_app/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/WTFwerewolf/Projects/the_restful_seven/app/services/feed_service.rb": [
+      "/Users/noel/news_app/app/services/feed_service.rb": [
         1,
-        1,
-        1,
-        null,
         1,
         1,
         null,
         1,
         null,
         1,
-        2,
-        2,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        2,
-        2,
-        null,
-        null,
-        null,
-        null,
+        4,
+        4,
         null,
         null,
         null,
@@ -54,34 +37,34 @@
         null,
         null
       ],
-      "/Users/WTFwerewolf/Projects/the_restful_seven/app/channels/application_cable/channel.rb": [
+      "/Users/noel/news_app/app/mailers/application_mailer.rb": [
         0,
         0,
         0,
         0
       ],
-      "/Users/WTFwerewolf/Projects/the_restful_seven/app/channels/application_cable/connection.rb": [
+      "/Users/noel/news_app/app/models/application_record.rb": [
+        0,
+        0,
+        0
+      ],
+      "/Users/noel/news_app/app/jobs/application_job.rb": [
+        0,
+        0
+      ],
+      "/Users/noel/news_app/app/channels/application_cable/connection.rb": [
         0,
         0,
         0,
         0
       ],
-      "/Users/WTFwerewolf/Projects/the_restful_seven/app/jobs/application_job.rb": [
+      "/Users/noel/news_app/app/channels/application_cable/channel.rb": [
         0,
-        0
-      ],
-      "/Users/WTFwerewolf/Projects/the_restful_seven/app/mailers/application_mailer.rb": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/WTFwerewolf/Projects/the_restful_seven/app/models/application_record.rb": [
         0,
         0,
         0
       ]
     },
-    "timestamp": 1539870792
+    "timestamp": 1539871734
   }
 }
