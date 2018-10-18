@@ -14,7 +14,7 @@ module FeedsService
                             domains: domain)
                             # from: Date.today,
                             # to: month,
-                            # language: 'en',
+                            #  language: 'en''se')
                             # sortBy: 'relevancy')
                             
   end

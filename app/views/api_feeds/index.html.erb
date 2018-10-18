@@ -1,3 +1,6 @@
 <%= @apifeeds.each do | feed |%>
 <p><%= feed.title %></p>
+<img width= '200px' src= "<%= feed.urlToImage %>">
+<p><%= feed.description %></p>
+<p><%= feed.url %></p>
 <% end %>
