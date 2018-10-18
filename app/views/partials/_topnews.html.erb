@@ -1,7 +1,7 @@
 <h1>Top News</h1>  
 <% @top_article.each do | feed |%>
-    <h3 class="article-title"><strong><%= feed.title %></strong></h3>
+    <h3 class="top-article-title"><strong><%= feed.title %></strong></h3>
     <img width='350px' src="<%= feed.urlToImage %>">
-    <p class="article-content"><%= feed.description %></p>
-    <p class="article-agency"><%= link_to "Full story", feed.url %></p>
+    <p class="top-article-content"><%= feed.description %></p>
+    <p class="top-article-agency"><%= link_to "Full story", feed.url %></p>
 <% end %>
