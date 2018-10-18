@@ -1,10 +1,18 @@
 .breaking-news { 
-  border: solid black;
+  
   grid-area: breaking-news;
   overflow: hidden;
   display: grid;
-  justify-content: space-between;
+  justify-content: center;
+  
+  align-content: space-around;
+  
+ 
 }
+body {
+  font-family: 'Share Tech', sans-serif;
+}
+
   
 .news-feed { 
   border: solid black;
