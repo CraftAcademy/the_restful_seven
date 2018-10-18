@@ -1,3 +1,5 @@
+@javascript
+
 Feature: Setting up news feed from API
     As a business owner,
     In order to display many articles,
@@ -8,6 +10,7 @@ Feature: Setting up news feed from API
 
     Scenario: User should see articles from news_api
         Then I should see "Latest News"
+        Then stop
         And I should see '.article-title' element
         And I should see '.article-content' element
         And I should see '.article-author' element

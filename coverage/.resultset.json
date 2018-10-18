@@ -1,74 +1,74 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/Users/WTFwerewolf/Projects/the_restful_seven/app/channels/application_cable/channel.rb": [
+      "/Users/danmalmx/CraftAcademy/Week_8/the_restful_seven/app/controllers/api_feeds_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/danmalmx/CraftAcademy/Week_8/the_restful_seven/app/services/feeds_service.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/danmalmx/CraftAcademy/Week_8/the_restful_seven/app/controllers/application_controller.rb": [
+        1,
+        null
+      ],
+      "/Users/danmalmx/CraftAcademy/Week_8/the_restful_seven/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/danmalmx/CraftAcademy/Week_8/the_restful_seven/app/mailers/application_mailer.rb": [
         0,
         0,
         0,
         0
       ],
-      "/Users/WTFwerewolf/Projects/the_restful_seven/app/channels/application_cable/connection.rb": [
+      "/Users/danmalmx/CraftAcademy/Week_8/the_restful_seven/app/models/application_record.rb": [
+        0,
+        0,
+        0
+      ],
+      "/Users/danmalmx/CraftAcademy/Week_8/the_restful_seven/app/jobs/application_job.rb": [
+        0,
+        0
+      ],
+      "/Users/danmalmx/CraftAcademy/Week_8/the_restful_seven/app/channels/application_cable/connection.rb": [
         0,
         0,
         0,
         0
       ],
-      "/Users/WTFwerewolf/Projects/the_restful_seven/app/controllers/api_feeds_controller.rb": [
-        0,
-        null,
+      "/Users/danmalmx/CraftAcademy/Week_8/the_restful_seven/app/channels/application_cable/channel.rb": [
         0,
         0,
-        0,
-        0,
-        0
-      ],
-      "/Users/WTFwerewolf/Projects/the_restful_seven/app/controllers/application_controller.rb": [
-        0,
-        0
-      ],
-      "/Users/WTFwerewolf/Projects/the_restful_seven/app/helpers/application_helper.rb": [
-        0,
-        0
-      ],
-      "/Users/WTFwerewolf/Projects/the_restful_seven/app/jobs/application_job.rb": [
-        0,
-        0
-      ],
-      "/Users/WTFwerewolf/Projects/the_restful_seven/app/mailers/application_mailer.rb": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/WTFwerewolf/Projects/the_restful_seven/app/models/application_record.rb": [
-        0,
-        0,
-        0
-      ],
-      "/Users/WTFwerewolf/Projects/the_restful_seven/app/services/articles_service.rb": [
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
         0,
         0
       ]
     },
-    "timestamp": 1539861963
+    "timestamp": 1539868341
   }
 }

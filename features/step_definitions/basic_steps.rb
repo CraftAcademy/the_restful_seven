@@ -1,11 +1,15 @@
 Given("I am on the landing page") do
-    pending # Write code here that turns the phrase above into concrete actions
-  end
+  visit root_path
+end
   
-  Then("I should see {string}") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
-  end
+  Then("I should see {string}") do |expected_content|
+    expect(page).to have_content expected_content
+end
   
-  Then("I should see {string} element") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+  Then("I should see {string} element") do |element|
+    expect(page).to have_css element
+  end
+
+  Then("stop") do 
+  binding.pry
   end

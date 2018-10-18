@@ -5,7 +5,7 @@ require 'date'
 now = Date.today
 month = now-30
 
-module FeedsService
+module FeedService
   
   def self.get_feed(query, source, domain)
     newsapi = News.new(Rails.application.credentials.news[:api_key])
