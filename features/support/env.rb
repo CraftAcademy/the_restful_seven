@@ -4,11 +4,6 @@ require 'cucumber/rails'
 
 ActionController::Base.allow_rescue = false
 
-Before do 
-  OmniAuth.config.test_mode = true
-  OmniAuth.config.mock_auth[:facebook] = OmniAuth::AuthHash.new(OmniAuthFixtures.facebook_mock)
-end
-
 begin
   DatabaseCleaner.strategy = :transaction
 rescue NameError

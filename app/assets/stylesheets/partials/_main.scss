@@ -1,0 +1,65 @@
+body {
+  font-family: 'Share Tech', sans-serif;
+}
+
+.grid-item {
+  height: 200px;  
+  width: 90%
+}
+
+.breaking-news {   
+  grid-area: breaking-news;
+  overflow: hidden;
+  display: grid;
+  justify-content: center;  
+  align-content: start;
+  h1 {
+    margin: 20px;
+  }
+}
+  
+.news-feed { 
+  grid-area: news-feed;   
+  overflow: scroll;
+  display: grid;
+  justify-content: center;
+  align-content: start;
+  h1 {
+    margin: 20px;
+  }
+}
+.subscribe { 
+  border: dashed black;
+  grid-area: subscribe; 
+}
+
+.comments { 
+  border: dashed black;
+  grid-area: comments; 
+}
+
+.rated-articles { 
+  border: dashed black;
+  grid-area: rated-articles; 
+}
+
+.grid-container {
+  display: grid;
+  height: 90vh;
+  grid-gap: 30px;
+  margin: 20px 70px;
+  padding: 5px;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas:
+    'breaking-news breaking-news breaking-news news-feed'
+    'subscribe comments rated-articles news-feed';
+}
+
+
+
+.footer {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
