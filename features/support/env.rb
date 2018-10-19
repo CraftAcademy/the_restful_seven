@@ -1,6 +1,7 @@
 require 'coveralls'
 Coveralls.wear_merged!('rails')
 require 'cucumber/rails'
+require 'webmock/cucumber'
 
 ActionController::Base.allow_rescue = false
 
@@ -28,3 +29,14 @@ Capybara.server = :puma
 Capybara.javascript_driver = :chrome
 
 World(FactoryBot::Syntax::Methods)
+Cucumber::Rails::Databse.javascript_strategy = :truncation
+WebMock.disable_net_connect!(allow_localhost: true)
+Before do
+  stub_request(:get, https://newsapi.org/v2/everything?q=bitcoin&apiKey=62aeaa7f151d4e21a0d8bcc6032044ea ).
+  with(
+    headers: {
+      'Accept'=>'*/*',
+      'Accept-Edcoding'=>'gzip, deflate',
+    }
+  )
+end
