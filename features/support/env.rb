@@ -14,7 +14,6 @@ Cucumber::Rails::Database.javascript_strategy = :truncation
 
 WebMock.allow_net_connect!
 Chromedriver.set_version '2.36' unless ENV['CI'] == 'true'
-WebMock.disable_net_connect!(allow_localhost: true)
 
 
 chrome_options = %w(no-sandbox disable-popup-blocking disable-infobars)
