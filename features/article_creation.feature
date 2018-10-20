@@ -13,3 +13,9 @@ Feature: Article creation page
       And I should see "My first article"
       And I should see "Content for my first article"
       
+    Scenario: Author does not enter title for article [sad path]
+      Given I am on the article creation page
+      And I fill in "Content" with "Content for my first article"
+      And I fill in "Author" with "Byggare Bob"
+      And I click "Submit"
+      Then I should see "Title can't be blank"
