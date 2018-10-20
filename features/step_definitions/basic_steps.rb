@@ -1,4 +1,4 @@
-Given("I am on the landing page") do
+Given("I am/visit (on )the landing/main page") do
   visit root_path
 end
 
