@@ -30,14 +30,18 @@ Capybara.server = :puma
 Capybara.javascript_driver = :chrome
 
 World(FactoryBot::Syntax::Methods)
-Cucumber::Rails::Databse.javascript_strategy = :truncation
 WebMock.disable_net_connect!(allow_localhost: true)
-Before do
-  stub_request(:get, https://newsapi.org/v2/everything?q=bitcoin&apiKey=62aeaa7f151d4e21a0d8bcc6032044ea ).
+
+Before '@api_call' do 
+  WebMock.disable_net_connect!(allow_localhost: true)
+  stub_request(:get, "https://newsapi.org/v2/everything?domains=bbc.co.uk&language=en&pageSize=10&q=politics&sources=bbc-news").
   with(
     headers: {
       'Accept'=>'*/*',
-      'Accept-Edcoding'=>'gzip, deflate',
-    }
-  )
+      'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+      'Host'=>'newsapi.org',
+      'User-Agent'=>'Ruby',
+      'X-Api-Key'=>Rails.application.credentials.news[:api_key]
+    }).
+  to_return(status: 200, body: Rails.root.join('features', 'support', 'fixtures', 'api_response_bbc_politics.txt').read, headers: {})
 end
