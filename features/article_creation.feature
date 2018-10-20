@@ -9,7 +9,7 @@ Feature: Article creation page
       And I fill in "Content" with "Content for my first article"
       And I fill in "Author" with "Byggare Bob"
       And I click "Submit"
-      Then I should see "Article was successfully created"
+      Then I should see "Article was successfully created."
       And I should see "My first article"
       And I should see "Content for my first article"
       
