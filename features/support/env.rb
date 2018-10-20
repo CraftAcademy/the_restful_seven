@@ -4,6 +4,7 @@ require 'cucumber/rails'
 require 'webmock/cucumber'
 
 ActionController::Base.allow_rescue = false
+WebMock.allow_net_connect!
 
 begin
   DatabaseCleaner.strategy = :transaction
