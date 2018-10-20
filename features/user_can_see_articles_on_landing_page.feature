@@ -1,4 +1,4 @@
-@javascript
+@javascript @api_call
 
 Feature: Setting up news feed from API
     As a business owner,

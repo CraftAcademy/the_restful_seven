@@ -31,7 +31,6 @@ Capybara.javascript_driver = :chrome
 
 World(FactoryBot::Syntax::Methods)
 WebMock.disable_net_connect!(allow_localhost: true)
-
 Before '@api_call' do 
   WebMock.disable_net_connect!(allow_localhost: true)
   stub_request(:get, "https://newsapi.org/v2/everything?domains=bbc.co.uk&language=en&pageSize=10&q=politics&sources=bbc-news").
