@@ -3,7 +3,7 @@ Given("I visit the main page") do
 end
 
 Given("I am on the article creation page") do
-  visit article_creation_path
+  visit new_article_path
 end
 
 Given("I fill in {string} with {string}") do |field, content|
