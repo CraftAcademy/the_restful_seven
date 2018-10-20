@@ -19,4 +19,4 @@ Feature: Setting up news feed from API
         Then I should see "Latest News"
         And I should see '.top-article-title' element
         And I should see '.top-article-content' element
-        And I should see '.top-article-agency' element
+        And I should see '.top-article' element
