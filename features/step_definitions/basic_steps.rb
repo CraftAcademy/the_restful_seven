@@ -7,7 +7,7 @@ Given("I am on the article creation page") do
 end
 
 Given("I fill in {string} with {string}") do |field, content|
-  fill_in field, with: content
+    fill_in field, with: content
 end
 
 Given("I click {string}") do |button|
