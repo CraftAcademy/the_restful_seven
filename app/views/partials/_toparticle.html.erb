@@ -1,0 +1,5 @@
+<h1>Top News</h1>  
+<h3 class="top-article-title"><%= @top_article.title %></h3>
+<img width='350px' src="<%= @top_article.urlToImage %>">
+<p class="top-article-content"><%= @top_article.description %></p>
+<p class="top-article"><%= link_to "Read the full story", @top_article.url %></p>

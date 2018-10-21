@@ -1,0 +1,136 @@
+{
+    "status": "ok",
+    "totalResults": 143,
+    "articles": [
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Anwar Ibrahim returns to Malaysian politics with by-election win",
+            "description": "The former deputy Malaysian PM wins a parliamentary seat, months after he was released from jail.",
+            "url": "https://www.bbc.co.uk/news/world-asia-45848536",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/FD6A/production/_103847846_mediaitem103847845.jpg",
+            "publishedAt": "2018-10-13T13:47:16Z",
+            "content": "Image copyright Getty Images Image caption Anwar Ibrahim was in good spirits in Port Dickson on Saturday Malaysian ex-deputy Prime Minister Anwar Ibrahim has won a parliamentary seat, sealing his return to front-line politics. The 71-year-old won a by-electio… [+1807 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Trump 'likes Taylor Swift 25% less' after political post",
+            "description": "The US president reacts after the singer endorsed two Democrats in November's mid-term elections.",
+            "url": "https://www.bbc.co.uk/news/world-us-canada-45793352",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1024x576/p06nb9vz.jpg",
+            "publishedAt": "2018-10-09T01:01:59Z",
+            "content": "Media caption Donald Trump on Taylor Swift: \"Lets just say I like her music about 25% less now\" Taylor Swift's endorsement of two Democrats for the upcoming US mid-term elections has sparked a huge response - including from President Donald Trump. Mr Trump ha… [+3294 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Pik Botha: Key figure in South Africa's apartheid transition dies",
+            "description": "The South African, who served the apartheid regime and the Mandela government, dies at 86.",
+            "url": "https://www.bbc.co.uk/news/world-africa-45833957",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/media/images/71709000/jpg/_71709846_71709845.jpg",
+            "publishedAt": "2018-10-12T06:58:33Z",
+            "content": "Media playback is unsupported on your device Media caption Pik Botha, in a 2013 BBC interview, praises Nelson Mandela A key figure during South Africa's transition from the apartheid era, Pik Botha, has died at the age of 86. Mr Botha served as his country's … [+1284 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Astronaut Scott Kelly gets a rocket for quoting Winston Churchill",
+            "description": "Scott Kelly apologises for quoting the WW2 British PM, only to be attacked again for his apology.",
+            "url": "https://www.bbc.co.uk/news/world-us-canada-45789819",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/106EB/production/_103770376_scottkelly.jpg",
+            "publishedAt": "2018-10-08T17:23:06Z",
+            "content": "Image copyright NASA Image caption NASA astronaut Scott Kelly One of the unwritten rules of social media is avoid inspirational quotes. American astronaut Scott Kelly put that to the test on Sunday when his use of Winston Churchill quotes landed him in hot wa… [+3273 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Jair Bolsonaro: The candidate dividing friends in Brazil",
+            "description": "Far-right presidential candidate Jair Bolsonaro provokes contempt and admiration in Brazil.",
+            "url": "https://www.bbc.co.uk/news/world-latin-america-45652518",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/17C3C/production/_103604379_img_8477.jpg",
+            "publishedAt": "2018-09-28T21:34:46Z",
+            "content": "At this time of year, the gaúchos are out in force. Dressed in pantaloons and neckerchiefs and wearing wide-brimmed felt hats, the people of Rio Grande do Sul have just finished celebrating Semana Farroupilha (Ragamuffin week). It is an annual festival that m… [+5841 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Germany protest: Tens of thousands march against far right",
+            "description": "More than 100,000 people join a march in Berlin in protest at the recent rise in xenophobia.",
+            "url": "https://www.bbc.co.uk/news/world-europe-45851665",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/1035A/production/_103849366_049941158-1.jpg",
+            "publishedAt": "2018-10-13T17:05:35Z",
+            "content": "Image copyright Getty Images Image caption The organisers said many more people came than expected More than 100,000 people have been marching in the German capital Berlin to protest against xenophobia and the increasing influence of the far right. Rights gro… [+2577 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Kanye: 'Trump hat made me feel like Superman'",
+            "description": "The rapper also banged his fist on the Oval Office's desk and discussed his bipolar diagnosis.",
+            "url": "https://www.bbc.co.uk/news/world-us-canada-45826875",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/F980/production/_103827836_hi049902967.jpg",
+            "publishedAt": "2018-10-11T17:34:37Z",
+            "content": "Image copyright Pool Kanye West has launched into an expletive-filled rant in the Oval Office as he lavished praise on US President Donald Trump. Wearing a Make America Great Again hat, the pop star said: \"There was something about when I put this hat on it m… [+943 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Kellyanne Conway: 'I'm a victim of sexual assault'",
+            "description": "The revelation came as she was defending President Trump's embattled Supreme Court nominee.",
+            "url": "https://www.bbc.co.uk/news/world-us-canada-45700508",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/6BBF/production/_103638572_mediaitem103638570.jpg",
+            "publishedAt": "2018-09-30T16:51:59Z",
+            "content": "Image copyright Reuters Image caption Kellyanne Conway managed Donald Trump's election campaign White House advisor Kellyanne Conway has revealed that she was sexually assaulted as a younger woman. \"I'm a victim of sexual assault,\" she told CNN without giving… [+2043 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Bavaria election: German conservatives lose their fizz",
+            "description": "The conservative CSU's hold on Bavaria looks set to diminish in Sunday's key election.",
+            "url": "https://www.bbc.co.uk/news/world-europe-45835795",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/6F43/production/_103838482_bavbeergettyok24sep.jpg",
+            "publishedAt": "2018-10-12T23:59:40Z",
+            "content": "Image copyright Getty Images Image caption Oktoberfest - one of Bavaria's proudest traditions Every autumn, lederhosen-clad drinkers crowd into vast tents festooned with dried hop flowers, to celebrate Bavaria's most intoxicating export. Waitresses bearing fi… [+4697 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Transgender candidate busts stereotypes in Brazil",
+            "description": "Tifanny Abreu is one of 54 transgender candidates running in Brazil's general election on 7 October.",
+            "url": "https://www.bbc.co.uk/news/world-latin-america-45731951",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/931A/production/_103685673_216b3ae9-1508-4285-977a-8ca06fffcf3d.jpg",
+            "publishedAt": "2018-10-05T01:13:51Z",
+            "content": "Image copyright AFP Image caption Tifanny Abreu is the first transgender woman to play in Brazil's premier female volleyball league At a women's volleyball game on a Monday night in São Paulo, the stands are packed and those in attendance are decidedly rootin… [+5613 chars]"
+        }
+    ]
+}
