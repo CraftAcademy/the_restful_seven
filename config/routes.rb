@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
   root controller: :main, action: :index
-  resources :articles, only: [:create, :show, :new]
+  
+  namespace :admin do
+    root controller: :articles, action: :new
+    resources :articles, only: [:create, :show, :new]
+  end
 end

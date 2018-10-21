@@ -1,6 +1,6 @@
 <div class="w-full">
   <h1 class= "text-center mt-6">New Article</h1>
-  <%= form_with scope: :article, url: articles_path, local: true, class: "container mx-auto px-4 bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 mt-6" do |form| %>
+  <%= form_with scope: :article, url: admin_articles_path, local: true, class: "container mx-auto px-4 bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 mt-6" do |form| %>
     <% if @article.errors.any? %>
       <div id="error_explanation">
         <h2>

@@ -1,4 +1,4 @@
-class ArticlesController < ApplicationController
+class Admin::ArticlesController < Admin::AdminController
   def new
     @article = Article.new
   end
@@ -6,10 +6,10 @@ class ArticlesController < ApplicationController
   def create
     @article = Article.new(article_params)
     if @article.save
-      redirect_to @article
+      redirect_to admin_article_path(@article)
       flash[:notice] = "Article was successfully created."
     else
-      render 'new'
+      render :new
     end
   end
 
