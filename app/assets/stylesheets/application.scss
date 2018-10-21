@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+ a {
+    color: blue;
+    text-decoration: none;
+ }
+
+ a:visited {
+    color: blue; 
+ }
+
+ img {
+    margin-left: 5px;
+    max-width: 9%;
+    float: left;
+}
+
+ h4, p {
+    display: grid;
+    padding-left: 5px;
+}
