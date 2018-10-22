@@ -5,7 +5,6 @@ class Admin::ArticlesController < Admin::AdminController
 
   def create
     @article = Article.new(article_params)
-    binding.pry
     if @article.save
       redirect_to admin_article_path(@article)
       flash[:notice] = "Article was successfully created."
