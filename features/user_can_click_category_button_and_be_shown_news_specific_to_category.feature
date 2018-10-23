@@ -19,4 +19,4 @@ Feature: Filter feed from news api into categories
         And I click the "Business" button
         Then I should see "Hyderabad homes and pavements made from used plastic bags" 
         And I should see "Businesses in India may have found a way to turn plastic rubbish into a golden business opportunity."
-        And I should see "author" link
+        And I should see "Read the full story" link
