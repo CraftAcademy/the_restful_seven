@@ -1,12 +1,32 @@
 <div class="container mx-auto px-4" id="categories">
+    <button class="p-2" onclick="openDiv('all')">All</button>
+    <button class="p-2" onclick="openDiv('general')">General</button>
     <button class="p-2" onclick="openDiv('business')">Business</button>
     <button class="p-2" onclick="openDiv('entertainment')">Entertainment</button>
-    <button class="p-2" onclick="openDiv('health')">Health</button> %>
+    <button class="p-2" onclick="openDiv('health')">Health</button>
     <button class="p-2" onclick="openDiv('sports')">Sports</button>
-    <button class="p-2" onclick="openDiv('technology')">Technology</button> %>
+    <button class="p-2" onclick="openDiv('technology')">Technology</button>
+
+    <div class="category" id="all">
+        <% @allfeed.each do | feed |%>
+            <h3 class="article-title"><strong><%= feed.title %></strong></h3>
+            <img width='150px' src="<%= feed.urlToImage %>">
+            <p class="article-content"><%= feed.description %></p>
+            <p class="article-agency"><%= link_to "Read the full story", feed.url %></p>
+        <% end %>
+    </div>
+
+    <div class="category" id="general">
+        <% @generalfeed.each do | feed |%>
+            <h3 class="article-title"><strong><%= feed.title %></strong></h3>
+            <img width='150px' src="<%= feed.urlToImage %>">
+            <p class="article-content"><%= feed.description %></p>
+            <p class="article-agency"><%= link_to "Read the full story", feed.url %></p>
+        <% end %>
+    </div>
 
     <div class="category" id="business">
-        <% @bizfeed.each do | feed |%>
+        <% @businessfeed.each do | feed |%>
             <h3 class="article-title"><strong><%= feed.title %></strong></h3>
             <img width='150px' src="<%= feed.urlToImage %>">
             <p class="article-content"><%= feed.description %></p>
@@ -15,7 +35,7 @@
     </div>
 
     <div class="category hidden" id="sports">
-        <% @spofeed.each do | feed |%>
+        <% @sportsfeed.each do | feed |%>
             <h3 class="article-title"><strong><%= feed.title %></strong></h3>
             <img width='150px' src="<%= feed.urlToImage %>">
             <p class="article-content"><%= feed.description %></p>
@@ -23,8 +43,8 @@
         <% end %>
     </div>
 
-    <div class="category" id="business">
-        <% @bizfeed.each do | feed |%>
+    <div class="category" id="entertainment">
+        <% @entertainmentfeed.each do | feed |%>
             <h3 class="article-title"><strong><%= feed.title %></strong></h3>
             <img width='150px' src="<%= feed.urlToImage %>">
             <p class="article-content"><%= feed.description %></p>
@@ -32,8 +52,8 @@
         <% end %>
     </div>
 
-    <div class="category" id="business">
-        <% @bizfeed.each do | feed |%>
+    <div class="category" id="health">
+        <% @healthfeed.each do | feed |%>
             <h3 class="article-title"><strong><%= feed.title %></strong></h3>
             <img width='150px' src="<%= feed.urlToImage %>">
             <p class="article-content"><%= feed.description %></p>
@@ -41,3 +61,11 @@
         <% end %>
     </div>
 
+    <div class="category" id="technology">
+        <% @technologyfeed.each do | feed |%>
+            <h3 class="article-title"><strong><%= feed.title %></strong></h3>
+            <img width='150px' src="<%= feed.urlToImage %>">
+            <p class="article-content"><%= feed.description %></p>
+            <p class="article-agency"><%= link_to "Read the full story", feed.url %></p>
+        <% end %>
+    </div>

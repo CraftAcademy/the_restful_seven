@@ -20,5 +20,3 @@ function openDiv(categories) {
         category.forEach( id => id.style.display = "none");
         document.getElementById(categories).style.display = "block";
 }
-
-// 
