@@ -11,13 +11,13 @@ body {
   grid-area: breaking-news;
   overflow: hidden;
   display: grid;
-  justify-content: center;  
+  justify-content: left;  
   align-content: start;
   h1 {
     margin: 20px;
   }
 }
-  
+ 
 .news-feed { 
   grid-area: news-feed;   
   overflow: scroll;

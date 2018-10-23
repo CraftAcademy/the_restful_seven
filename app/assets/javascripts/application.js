@@ -14,3 +14,11 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+function openDiv(categories) {
+    let category = querySelectorAll(".category");
+        category.forEach( (id) => id.style.display = "none");
+        document.getElementById(categories).style.display = "block";
+}
+
+// 
