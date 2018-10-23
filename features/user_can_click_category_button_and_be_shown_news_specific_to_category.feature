@@ -1,4 +1,4 @@
-@javascript @api_call
+@api_category_call
 
 Feature: Filter feed from news api into categories
     As a visitor,
@@ -9,13 +9,13 @@ Feature: Filter feed from news api into categories
         Given I am on the landing page
 
     Scenario: User should see category specific news when clicking on category menu
-        Then I should see "All" button
-        And I should see "General" button
-        And I should see "Business" button
-        And I should see "Entertainment" button
-        And I should see "Health" button
-        And I should see "Sports" button
-        And I should see "Technology" button
+        Then I should see "All" 
+        And I should see "General" 
+        And I should see "Business" 
+        And I should see "Entertainment" 
+        And I should see "Health" 
+        And I should see "Sports" 
+        And I should see "Technology" 
         And I click the "Business" button
-        Then I should see "something" 
-        And I should see "something"
+        Then I should see "Hyderabad homes and pavements made from used plastic bags" 
+        And I should see "Businesses in India may have found a way to turn plastic rubbish into a golden business opportunity."

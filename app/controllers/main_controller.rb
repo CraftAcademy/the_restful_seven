@@ -1,6 +1,6 @@
 class MainController < ApplicationController
+
   def index
-    
     @allfeed = FeedService.get_feed('all', 'bbc-news', 'bbc.co.uk', 10)    
     @generalfeed = FeedService.get_feed('general', 'bbc-news', 'bbc.co.uk', 10)    
     @businessfeed = FeedService.get_feed('business', 'bbc-news', 'bbc.co.uk', 10)    
@@ -9,7 +9,7 @@ class MainController < ApplicationController
     @healthfeed = FeedService.get_feed('health', 'bbc-news', 'bbc.co.uk', 10)
     @technologyfeed = FeedService.get_feed('technology', 'bbc-news', 'bbc.co.uk', 10)
 
-    @top_article = @apifeed.first
+    @top_article = @allfeed.first
   end
   
 end
