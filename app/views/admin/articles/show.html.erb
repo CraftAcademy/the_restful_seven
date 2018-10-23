@@ -12,5 +12,6 @@
       <span class="inline-block bg-purple-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#<%= @article.category.name%></span>
     </div>    
   </div>
-  <%= link_to "Dashboard", admin_root_path, class: "container mx-auto text-2xl max-w-sm block mt-6" %>  
+  <%= link_to "Dashboard", admin_root_path, class: "container mx-auto text-2xl max-w-sm block mt-6" %>
+  <%= link_to "Edit article", edit_admin_article_path(@article), class: "container mx-auto text-2xl max-w-sm block mt-6" %>
 </div>

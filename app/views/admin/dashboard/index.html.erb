@@ -4,11 +4,12 @@
   <div class="container mx-auto px-4 mt-10">
     <hr>
     <table>
-      <tr>
+      <tr class="font-bold">
         <td>ID</td>
         <td>Category</td>
         <td>Title</td>
         <td>Content</td>
+        <td>Author</td>
         <td>Approved status</td>
         <td>Edit</td>
         <td>delete</td>
@@ -19,6 +20,7 @@
           <td><%= article.category.name %></td>
           <td><%= link_to article.title, admin_article_path(article) %></td>
           <td><%= article.content[0..150] %></td>
+          <td><%= article.author %></td>
           <td><%= article.approved %></td>
           <td><%= link_to "Edit", edit_admin_article_path(article) %></td>
           <td><%= link_to "Delete", admin_article_path(article),  method: :delete, data: {confirm: 'Are you sure?'} %></td>
