@@ -5,7 +5,7 @@ Feature: Main Page Layout
   I would like to view articles.
 
   Scenario: A user wants to view content
-   Given I visit the main page
+   Given I am on the landing page
     Then I should see "The Restful News" 
     And I should see "Top News"   
     And I should see "Latest News"
