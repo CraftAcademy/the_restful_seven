@@ -17,7 +17,7 @@
         <% end %>
     </div>
 
-    <div class="category" id="general">
+    <div class="category hidden" id="general">
         <% @generalfeed.each do | feed |%>
             <h3 class="article-title"><strong><%= feed.title %></strong></h3>
             <img width='150px' src="<%= feed.urlToImage %>">
@@ -26,7 +26,7 @@
         <% end %>
     </div>
 
-    <div class="category" id="business">
+    <div class="category hidden" id="business">
         <% @businessfeed.each do | feed |%>
             <h3 class="article-title"><strong><%= feed.title %></strong></h3>
             <img width='150px' src="<%= feed.urlToImage %>">
@@ -44,7 +44,7 @@
         <% end %>
     </div>
 
-    <div class="category" id="entertainment">
+    <div class="category hidden" id="entertainment">
         <% @entertainmentfeed.each do | feed |%>
             <h3 class="article-title"><strong><%= feed.title %></strong></h3>
             <img width='150px' src="<%= feed.urlToImage %>">
@@ -53,7 +53,7 @@
         <% end %>
     </div>
 
-    <div class="category" id="health">
+    <div class="category hidden" id="health">
         <% @healthfeed.each do | feed |%>
             <h3 class="article-title"><strong><%= feed.title %></strong></h3>
             <img width='150px' src="<%= feed.urlToImage %>">
@@ -62,7 +62,7 @@
         <% end %>
     </div>
 
-    <div class="category" id="technology">
+    <div class="category hidden" id="technology">
         <% @technologyfeed.each do | feed |%>
             <h3 class="article-title"><strong><%= feed.title %></strong></h3>
             <img width='150px' src="<%= feed.urlToImage %>">
