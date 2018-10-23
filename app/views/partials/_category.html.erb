@@ -1,0 +1,27 @@
+<div class="container mx-auto px-4" id="categories">
+    <button class="p-2 hover:bg-grey tabs" onclick="openDiv('business')">Business</button>
+    <%# <button class="p-2" onclick="openDiv('entertainment')">Entertainment</button>
+    <button class="p-2" onclick="openDiv('general')">General</button>
+    <button class="p-2" onclick="openDiv('health')">Health</button> %>
+    <%# <button class="p-2" onclick="openDiv('science')">Science</button> %>
+    <button class="p-2 hover:bg-grey tabs" onclick="openDiv('sports')">Sports</button>
+    <%# <button class="p-2" onclick="openDiv('technology')">Technology</button> %>
+
+    <div class="category" id="business"> 
+        <% @bizfeed.each do | feed |%>
+            <h3 class="article-title"><strong><%= feed.title %></strong></h3>
+            <img width='150px' src="<%= feed.urlToImage %>">
+            <p class="article-content"><%= feed.description %></p>
+            <p class="article-agency"><%= link_to "Read the full story", feed.url %></p>
+        <% end %>
+    </div>
+
+        <div class="category hidden" id="sport"> 
+        <% @spofeed.each do | feed |%>
+            <h3 class="article-title"><strong><%= feed.title %></strong></h3>
+            <img width='150px' src="<%= feed.urlToImage %>">
+            <p class="article-content"><%= feed.description %></p>
+            <p class="article-agency"><%= link_to "Read the full story", feed.url %></p>
+        <% end %>
+    </div>
+
