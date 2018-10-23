@@ -13,6 +13,10 @@ class Admin::ArticlesController < Admin::AdminController
     end
   end
 
+  def edit
+    @article = Article.find(params[:id])
+  end
+
   def show
     @article = Article.find(params[:id])
   end
@@ -21,12 +25,19 @@ class Admin::ArticlesController < Admin::AdminController
   end
 
   def update
+    @article = Article.find(params[:id])
+    if @article.update(article_params)
+      redirect_to admin_root_path
+      flash[:notice] = "Article was successfully updated."
+    else
+      render 'edit'
+    end
   end
 
   private
 
   def article_params
-    params.require(:article).permit(:title, :content, :author, :category_id)
+    params.require(:article).permit(:title, :content, :author, :category_id, :approved)
   end
 
 end

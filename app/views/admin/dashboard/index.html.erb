@@ -8,6 +8,7 @@
         <td>ID</td>
         <td>Category</td>
         <td>Title</td>
+        <td>Content</td>
         <td>Approved status</td>
         <td>Edit</td>
         <td>delete</td>
@@ -17,8 +18,9 @@
           <td><%= article.id %></td>
           <td><%= article.category.name %></td>
           <td><%= link_to article.title, admin_article_path(article) %></td>
+          <td><%= article.content[0..150] %></td>
           <td><%= article.approved %></td>
-          <td><%= link_to "Edit", admin_article_path(article),  method: :patch, data: {confirm: 'Are you sure?'} %></td>
+          <td><%= link_to "Edit", edit_admin_article_path(article) %></td>
           <td><%= link_to "Delete", admin_article_path(article),  method: :delete, data: {confirm: 'Are you sure?'} %></td>
         </tr>
       <% end %>

@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   
   namespace :admin do
     root controller: :dashboard, action: :index
-    resources :articles, only: [:create, :show, :new, :update, :destroy]
+    resources :articles, only: [:create, :show, :new, :update, :destroy, :edit]
   end
 end

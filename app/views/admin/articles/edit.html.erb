@@ -1,0 +1,32 @@
+<div class="w-full fullscreen container mx-auto">
+  <h1 class= "text-center mt-6">Edit Article</h1>
+  <%= form_with model: [:admin, @article], local: true, class: "px-4 bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 mt-6" do |form| %>
+    <% if @article.errors.any? %>
+      <div id="error_explanation">
+        <h2>
+          <%= pluralize(@article.errors.count, "error") %> prohibited
+          this article from being saved:
+        </h2>
+        <ul>
+          <% @article.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <%= form.label :title, class: "block text-grey-darker text-sm font-bold mb-2" %>
+    <%= form.text_field :title, placeholder: "Title", class: "shadow appearance-none border rounded py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" %>
+    <%= form.label :content, class: "block text-grey-darker text-sm font-bold mb-2" %>
+    <%= form.text_area :content, placeholder: "Content", class: "shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"%>
+    <%= form.label :author, class:"block text-grey-darker text-sm font-bold mb-2" %>
+    <%= form.text_field :author, placeholder: "Author", class: "shadow appearance-none border rounded py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" %>
+    <%= form.label :category_id, class:"block text-grey-darker text-sm font-bold mb-2" %>
+    <%= form.select :category_id, Category.all.collect {|c| [ c.name, c.id ] }, {include_blank: 'Category'}, id: "Category", class: "block appearance-none mt-4 bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline" %>
+    <%= form.label :approved, class:"block text-grey-darker text-sm font-bold mb-2" %>
+    <%= form.check_box :approved %>
+    
+    <%= form.submit value: "Update", class: "bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 my-4 rounded focus:outline-none focus:shadow-outline" %>
+   
+  <% end %>
+  <%= link_to "Dashboard", admin_root_path, class: "container mx-auto text-2xl" %>
+</div>
