@@ -11,3 +11,7 @@ end
 Then("I click the {string} button") do |button|
   click_button button
 end
+
+Then("I should see {string} link") do |link|
+  expect(page).to have_content link
+end
