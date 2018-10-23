@@ -1,4 +1,4 @@
-@javascript @api_call
+@javascript
 Feature: Main Page Layout
   As a user,
   In order to view content,

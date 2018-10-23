@@ -1,11 +1,12 @@
+<h1>Latest News</h1>
 <div class="container mx-auto px-4" id="categories">
-    <button class="p-2" onclick="openDiv('all')">All</button>
-    <button class="p-2" onclick="openDiv('general')">General</button>
-    <button class="p-2" onclick="openDiv('business')">Business</button>
-    <button class="p-2" onclick="openDiv('entertainment')">Entertainment</button>
-    <button class="p-2" onclick="openDiv('health')">Health</button>
-    <button class="p-2" onclick="openDiv('sports')">Sports</button>
-    <button class="p-2" onclick="openDiv('technology')">Technology</button>
+    <button class="py-2 px-1 m-1 border rounded bg-grey-light hover:bg-blue-light" onclick="openDiv('all')">All</button>
+    <button class="py-2 px-1 m-1 border rounded bg-grey-light hover:bg-blue-light" onclick="openDiv('general')">General</button>
+    <button class="py-2 px-1 m-1 border rounded bg-grey-light hover:bg-blue-light" onclick="openDiv('business')">Business</button>
+    <button class="py-2 px-1 m-1 border rounded bg-grey-light hover:bg-blue-light" onclick="openDiv('entertainment')">Entertainment</button>
+    <button class="py-2 px-1 m-1 border rounded bg-grey-light hover:bg-blue-light" onclick="openDiv('health')">Health</button>
+    <button class="py-2 px-1 m-1 border rounded bg-grey-light hover:bg-blue-light" onclick="openDiv('sports')">Sports</button>
+    <button class="py-2 px-1 m-1 border rounded bg-grey-light hover:bg-blue-light" onclick="openDiv('technology')">Tech</button>
 
     <div class="category" id="all">
         <% @allfeed.each do | feed |%>
@@ -16,7 +17,7 @@
         <% end %>
     </div>
 
-    <div class="category" id="general">
+    <div class="category hidden" id="general">
         <% @generalfeed.each do | feed |%>
             <h3 class="article-title"><strong><%= feed.title %></strong></h3>
             <img width='150px' src="<%= feed.urlToImage %>">
@@ -25,7 +26,7 @@
         <% end %>
     </div>
 
-    <div class="category" id="business">
+    <div class="category hidden" id="business">
         <% @businessfeed.each do | feed |%>
             <h3 class="article-title"><strong><%= feed.title %></strong></h3>
             <img width='150px' src="<%= feed.urlToImage %>">
@@ -43,7 +44,7 @@
         <% end %>
     </div>
 
-    <div class="category" id="entertainment">
+    <div class="category hidden" id="entertainment">
         <% @entertainmentfeed.each do | feed |%>
             <h3 class="article-title"><strong><%= feed.title %></strong></h3>
             <img width='150px' src="<%= feed.urlToImage %>">
@@ -52,7 +53,7 @@
         <% end %>
     </div>
 
-    <div class="category" id="health">
+    <div class="category hidden" id="health">
         <% @healthfeed.each do | feed |%>
             <h3 class="article-title"><strong><%= feed.title %></strong></h3>
             <img width='150px' src="<%= feed.urlToImage %>">
@@ -61,7 +62,7 @@
         <% end %>
     </div>
 
-    <div class="category" id="technology">
+    <div class="category hidden" id="technology">
         <% @technologyfeed.each do | feed |%>
             <h3 class="article-title"><strong><%= feed.title %></strong></h3>
             <img width='150px' src="<%= feed.urlToImage %>">
@@ -69,3 +70,5 @@
             <p class="article-agency"><%= link_to "Read the full story", feed.url %></p>
         <% end %>
     </div>
+
+</div>
