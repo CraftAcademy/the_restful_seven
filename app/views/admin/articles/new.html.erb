@@ -1,6 +1,6 @@
-<div class="w-full">
+<div class="w-full fullscreen container mx-auto">
   <h1 class= "text-center mt-6">New Article</h1>
-  <%= form_with scope: :article, url: admin_articles_path, local: true, class: "container mx-auto px-4 bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 mt-6" do |form| %>
+  <%= form_with scope: :article, url: admin_articles_path, local: true, class: "px-4 bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 mt-6" do |form| %>
     <% if @article.errors.any? %>
       <div id="error_explanation">
         <h2>
@@ -23,4 +23,5 @@
     <%= form.select :category_id, Category.all.collect {|c| [ c.name, c.id ] }, {include_blank: 'Category'}, id: "Category", class: "block appearance-none mt-4 bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline" %>
     <%= form.submit value: "Submit", class: "bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 my-4 rounded focus:outline-none focus:shadow-outline" %>
   <% end %>
+  <%= link_to "Dashboard", admin_root_path, class: "container mx-auto text-2xl" %>
 </div>

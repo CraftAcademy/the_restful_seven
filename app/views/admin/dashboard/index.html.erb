@@ -1,10 +1,27 @@
-<h1 text-center>Dashboard</h1>
-<p><%= link_to "New Article", new_admin_article_path %></p>
-<div class="container mx-auto px-4 mt-6">
-  <% @articles.each do |article| %>
-    <%= article.id %> | 
-    <%= link_to article.title, admin_article_path(article) %> |
-    <%= link_to "Edit", admin_article_path(article),  method: :patch, data: {confirm: 'Are you sure?'} %> | 
-    <%= link_to "Delete", admin_article_path(article),  method: :delete, data: {confirm: 'Are you sure?'} %><br>
-  <% end %>
-</div>
+<section class="container mx-auto fullscreen">
+  <h1 class="text-center pt-4">Dashboard</h1>
+  <p><%= link_to "New Article", new_admin_article_path, class: "m-4 text-2xl" %></p>
+  <div class="container mx-auto px-4 mt-10">
+    <hr>
+    <table>
+      <tr>
+        <td>ID</td>
+        <td>Category</td>
+        <td>Title</td>
+        <td>Approved status</td>
+        <td>Edit</td>
+        <td>delete</td>
+      </tr>
+      <% @articles.each do |article| %>
+        <tr>        
+          <td><%= article.id %></td>
+          <td><%= article.category.name %></td>
+          <td><%= link_to article.title, admin_article_path(article) %></td>
+          <td><%= article.approved %></td>
+          <td><%= link_to "Edit", admin_article_path(article),  method: :patch, data: {confirm: 'Are you sure?'} %></td>
+          <td><%= link_to "Delete", admin_article_path(article),  method: :delete, data: {confirm: 'Are you sure?'} %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+</section>
