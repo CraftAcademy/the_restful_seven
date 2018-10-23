@@ -34,6 +34,12 @@ Background:
     Then I should see "Article was successfully updated."
     And I should see "Lots of battles!"
 
+  Scenario: Author can delete an article
+    Given I am on the dashboard
+    And I click the "WW2" link
+    And I click the "Delete article" link
+    Then I should see "Article was successfully deleted."
+    And I should not see "WW2"
 
 
    
