@@ -2,7 +2,7 @@ Feature: Admin dashboard
 
   As an admin,
   In order to manage the website,
-  I would like to have an admin dashboard with moderator actions. 
+  I would like to have an admin dashboard with moderator actions
 
 Background: 
   Given the following categories is in the database
