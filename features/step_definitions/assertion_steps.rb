@@ -7,3 +7,7 @@ end
 Then('I should see {string} element') do |element|
   expect(page).to have_css element
 end
+
+Then("I should not see {string}") do |content|
+  expect(page).not_to have_content content
+end
