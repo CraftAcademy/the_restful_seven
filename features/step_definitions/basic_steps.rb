@@ -13,3 +13,14 @@ end
 Given("I click {string}") do |button|
   click_button button
 end
+
+Given("I select {string} from {string}") do |option, list|
+  select option, from: list
+end
+
+Given("the following categories is in the database") do |table|
+  table.hashes.each do |category|
+    create(:category, category)
+  end
+end
+

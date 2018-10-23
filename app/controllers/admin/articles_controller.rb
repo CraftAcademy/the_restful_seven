@@ -20,7 +20,7 @@ class Admin::ArticlesController < Admin::AdminController
   private
 
   def article_params
-    params.require(:article).permit(:title, :content, :author)
+    params.require(:article).permit(:title, :content, :author, :category_id)
   end
 
 end
