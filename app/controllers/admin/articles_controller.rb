@@ -17,6 +17,12 @@ class Admin::ArticlesController < Admin::AdminController
     @article = Article.find(params[:id])
   end
 
+  def destroy
+  end
+
+  def update
+  end
+
   private
 
   def article_params
