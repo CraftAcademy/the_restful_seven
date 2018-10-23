@@ -1,33 +1,33 @@
 <h2 class="text-center">Log in</h2>
 
 <div class="w-full max-w-lg container mx-auto px-4">
-  <form class="bg-grey-light shadow-mdi rounded px-8 pt-10 pb-10 mb-8">
+  <div class="bg-grey-light shadow-mdi rounded px-8 pt-10 pb-10 mb-8">
     <div class="mb-8 ">
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field  :email, autofocus: true, autocomplete: "email", class: "block shadow appearance-none border rounded w-2/3 py-2 px-2 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"  %>
+    <%= f.label :email, class: "inline-flex leading-tight text-blue-dark text-sm font-bold"%><br />
+    <%= f.email_field  :email, autofocus: true, autocomplete: "email", class: "block shadow appearance-none border rounded w-2/3 py-2 px-2 text-blue-dark leading-tight focus:outline-none focus:shadow-outline"  %>
   </div>
 
   <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password", class: "block shadow appearance-none border rounded w-2/3 py-2 px-2 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"  %>
+    <%= f.label :password, class: "inline-flex leading-tight text-blue-dark text-sm font-bold"%><br />
+    <%= f.password_field :password, autocomplete: "current-password", class: "block shadow appearance-none border rounded w-2/3 py-2 px-2 text-blue-dark leading-tight focus:outline-none focus:shadow-outline"  %>
   </div>
 
   <% if devise_mapping.rememberable? -%>
     <div class="field">
       <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+      <%= f.label :remember_me, class: "inline-flex leading-tight text-blue-dark text-sm font-bold" %>
     </div>
   <% end -%>
 <%= f.submit "Log in", class: "bg-blue hover:bg-blue-dark text-white flex-item-center font-bold py-2 px-4 pt-2 mb-2 rounded focus:outline-none focus:shadow-outline"%>
-    
+<%= render "devise/shared/links" %>
+
   </div>
    </div>
-  </form>
+  </div>
 
 
 <% end %>
 
-<%= render "devise/shared/links" %>
