@@ -28,7 +28,12 @@ Background:
   Scenario: Author can edit articles
     Given I am on the dashboard
     And I click the "WW2" link
-    And I click the "Edit article" link 
+    And I click the "Edit article" link
+    And I fill in "Content" with "Lots of battles!"
+    And I click "Update"
+    Then I should see "Article was successfully updated."
+    And I should see "Lots of battles!"
+
 
 
    
