@@ -34,20 +34,6 @@ Capybara.javascript_driver = :chrome
 World(FactoryBot::Syntax::Methods)
 Before '@api_call' do 
   WebMock.disable_net_connect!(allow_localhost: true)
-  stub_request(:get, "https://newsapi.org/v2/everything?domains=bbc.co.uk&language=en&pageSize=10&q=politics&sources=bbc-news").
-  with(
-    headers: {
-      'Accept'=>'*/*',
-      'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-      'Host'=>'newsapi.org',
-      'User-Agent'=>'Ruby',
-      'X-Api-Key'=>Rails.application.credentials.news[:api_key]
-    }).
-  to_return(status: 200, body: Rails.root.join('features', 'support', 'fixtures', 'api_response_bbc_politics.txt').read, headers: {})
-end
-
-Before '@api_call' do 
-  WebMock.disable_net_connect!(allow_localhost: true)
   stub_request(:get, "https://newsapi.org/v2/everything?domains=bbc.co.uk&language=en&pageSize=10&q=all&sources=bbc-news").
   with(
     headers: {
@@ -57,5 +43,19 @@ Before '@api_call' do
       'User-Agent'=>'Ruby',
       'X-Api-Key'=>Rails.application.credentials.news[:api_key]
     }).
-  to_return(status: 200, body: Rails.root.join('features', 'support', 'fixtures', 'api_response_category_business_call').read, headers: {})
+  to_return(status: 200, body: Rails.root.join('features', 'support', 'fixtures', 'api_landing_page_latest_news.txt').read, headers: {})
+end
+
+Before '@api_category_call' do 
+  WebMock.disable_net_connect!(allow_localhost: true)
+  stub_request(:get, "https://newsapi.org/v2/everything?domains=bbc.co.uk&language=en&pageSize=10&q=business&sources=bbc-news").
+  with(
+    headers: {
+      'Accept'=>'*/*',
+      'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+      'Host'=>'newsapi.org',
+      'User-Agent'=>'Ruby',
+      'X-Api-Key'=>Rails.application.credentials.news[:api_key]
+    }).
+  to_return(status: 200, body: Rails.root.join('features', 'support', 'fixtures', 'api_response_category_business_call.txt').read, headers: {})
 end

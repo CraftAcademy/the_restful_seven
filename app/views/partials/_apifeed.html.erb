@@ -1,5 +1,5 @@
 <h1>Latest News</h1>  
-<% @apifeed.each do | feed |%>
+<% @allfeed.each do | feed |%>
     <h3 class="article-title"><strong><%= feed.title %></strong></h3>
     <img width='350px' src="<%= feed.urlToImage %>">
     <p class="article-content"><%= feed.description %></p>

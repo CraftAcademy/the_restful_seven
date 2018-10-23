@@ -1,6 +1,6 @@
 {
     "status": "ok",
-    "totalResults": 386,
+    "totalResults": 384,
     "articles": [
         {
             "source": {
