@@ -6,8 +6,9 @@ class MainController < ApplicationController
     if params[:category]
       @category_selected = params[:category]
       @category_news = FeedService.get_feed(params[:category], 'bbc-news', 'bbc.co.uk', 10) 
+      render :categories_feed
     else
-      @category_selected = "all"
+      @category_selected = "All"
       @category_news = @allfeed
     end
 

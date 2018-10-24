@@ -1,0 +1,6 @@
+<% @category_news.each do | feed |%>
+    <h3 class="article-title"><strong><%= feed.title %></strong></h3>
+    <img width='150px' src="<%= feed.urlToImage %>">
+    <p class="article-content"><%= feed.description %></p>
+    <p class="article-agency"><%= link_to "Read the full story", feed.url %></p>
+<% end %>
