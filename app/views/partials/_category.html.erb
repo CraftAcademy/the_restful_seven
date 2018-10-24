@@ -1,83 +1,32 @@
 <h1>Latest News</h1>
 <div class="container mx-auto px-4" id="categories">
-    <button class="py-2 px-1 m-1 border rounded bg-grey-light hover:bg-blue-light" onclick="openDiv('all')">All</button>
-    <button class="py-2 px-1 m-1 border rounded bg-grey-light hover:bg-blue-light" onclick="openDiv('general')">General</button>
-    <button class="py-2 px-1 m-1 border rounded bg-grey-light hover:bg-blue-light" onclick="openDiv('business')">Business</button>
-    <button class="py-2 px-1 m-1 border rounded bg-grey-light hover:bg-blue-light" onclick="openDiv('entertainment')">Entertainment</button>
-    <button class="py-2 px-1 m-1 border rounded bg-grey-light hover:bg-blue-light" onclick="openDiv('health')">Health</button>
-    <button class="py-2 px-1 m-1 border rounded bg-grey-light hover:bg-blue-light" onclick="openDiv('sports')">Sports</button>
-    <button class="py-2 px-1 m-1 border rounded bg-grey-light hover:bg-blue-light" onclick="openDiv('technology')">Tech</button>
 
-    <%= form_for :anything, url: "main/index" do |form| %>
-        <%#= form.inputs do %>
-            <%= form.collection_select :category,  as: :select, collection: ["Justin", "Kate", "Amelia", "Gus", "Meg"] %>
-        <%# end %>
+    <%= form_tag("/", method: :get) do %>
+        <div class="field">
+            <label>Select Category:</label>
+            <%= select_tag(:category, options_for_select([ "All", "Sports", "General", "Technology" ], @category_selected), 
+                onchange: "this.form.submit();")%>
+        </div>    
     <% end %>
 
-        <%= select_tag "people",  options_for_select([ "VISA", "MasterCard" ], "MasterCard", onchange: 'Rails.fire(this.form, "submit")' ) %>
 
-
-    <div class="category" id="all">
-        <% @allfeed.each do | feed |%>
-            <h3 class="article-title"><strong><%= feed.title %></strong></h3>
-            <img width='150px' src="<%= feed.urlToImage %>">
-            <p class="article-content"><%= feed.description %></p>
-            <p class="article-agency"><%= link_to "Read the full story", feed.url %></p>
-        <% end %>
-    </div>
-
-    <div class="category hidden" id="general">
-        <% @generalfeed.each do | feed |%>
-            <h3 class="article-title"><strong><%= feed.title %></strong></h3>
-            <img width='150px' src="<%= feed.urlToImage %>">
-            <p class="article-content"><%= feed.description %></p>
-            <p class="article-agency"><%= link_to "Read the full story", feed.url %></p>
-        <% end %>
-    </div>
-
-    <div class="category hidden" id="business">
-        <% @businessfeed.each do | feed |%>
-            <h3 class="article-title"><strong><%= feed.title %></strong></h3>
-            <img width='150px' src="<%= feed.urlToImage %>">
-            <p class="article-content"><%= feed.description %></p>
-            <p class="article-agency"><%= link_to "Read the full story", feed.url %></p>
-        <% end %>
-    </div>
-
-    <div class="category hidden" id="sports">
-        <% @sportsfeed.each do | feed |%>
-            <h3 class="article-title"><strong><%= feed.title %></strong></h3>
-            <img width='150px' src="<%= feed.urlToImage %>">
-            <p class="article-content"><%= feed.description %></p>
-            <p class="article-agency"><%= link_to "Read the full story", feed.url %></p>
-        <% end %>
-    </div>
-
-    <div class="category hidden" id="entertainment">
-        <% @entertainmentfeed.each do | feed |%>
-            <h3 class="article-title"><strong><%= feed.title %></strong></h3>
-            <img width='150px' src="<%= feed.urlToImage %>">
-            <p class="article-content"><%= feed.description %></p>
-            <p class="article-agency"><%= link_to "Read the full story", feed.url %></p>
-        <% end %>
-    </div>
-
-    <div class="category hidden" id="health">
-        <% @healthfeed.each do | feed |%>
-            <h3 class="article-title"><strong><%= feed.title %></strong></h3>
-            <img width='150px' src="<%= feed.urlToImage %>">
-            <p class="article-content"><%= feed.description %></p>
-            <p class="article-agency"><%= link_to "Read the full story", feed.url %></p>
-        <% end %>
-    </div>
-
-    <div class="category hidden" id="technology">
-        <% @technologyfeed.each do | feed |%>
-            <h3 class="article-title"><strong><%= feed.title %></strong></h3>
-            <img width='150px' src="<%= feed.urlToImage %>">
-            <p class="article-content"><%= feed.description %></p>
-            <p class="article-agency"><%= link_to "Read the full story", feed.url %></p>
-        <% end %>
-    </div>
-
+    <% if @category_selected.nil? %>
+        <div class="category" id="all">
+            <% @allfeed.each do | feed |%>
+                <h3 class="article-title"><strong><%= feed.title %></strong></h3>
+                <img width='150px' src="<%= feed.urlToImage %>">
+                <p class="article-content"><%= feed.description %></p>
+                <p class="article-agency"><%= link_to "Read the full story", feed.url %></p>
+            <% end %>
+        </div>
+    <% else %>
+        <div class="category" id="general">
+            <% @category_news.each do | feed |%>
+                <h3 class="article-title"><strong><%= feed.title %></strong></h3>
+                <img width='150px' src="<%= feed.urlToImage %>">
+                <p class="article-content"><%= feed.description %></p>
+                <p class="article-agency"><%= link_to "Read the full story", feed.url %></p>
+            <% end %>
+        </div>
+    <% end %>
 </div>
