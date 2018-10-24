@@ -16,14 +16,20 @@
       </a>
       <%= link_to "Create new article", admin_root_path, class: "block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4 ml-10"%>
     </div>
+      <% if user_signed_in? %>
+      <h4 class="content-center text-center">Signed in as:</h4>
+      <br>
+      <h4 class="content-center text-center"><%= current_user.email %></h4>
     <div>
-      <%= link_to "Signup", new_user_registration_path, class: "inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal hover:bg-white mt-4 lg:mt-0" if not user_signed_in?%>
+      <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal hover:bg-white mt-4 ml-6 lg:mt-0"%>
+    </div>
+      <% else %>
+      <%= link_to "Signup", new_user_registration_path, class: "inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal hover:bg-white mt-4 lg:mt-0"%>
+    </div>    
+    <div>
+      <%= link_to "Login", user_session_path, class: "inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal hover:bg-white mt-4 ml-6 lg:mt-0"%>
     </div>
     <div>
-      <%= link_to "Sign out", destroy_user_session_path, :method => :delete, class: "inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal hover:bg-white mt-4 ml-6 lg:mt-0" if current_user%>
+      <% end %>
     </div>
-    <div>
-      <%= link_to "Login", user_session_path, class: "inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal hover:bg-white mt-4 ml-6 lg:mt-0" if not user_signed_in?%>
-    </div>
-  </div>
 </nav>
