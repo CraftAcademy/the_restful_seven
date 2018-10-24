@@ -14,13 +14,12 @@
  *= require_self
  */
  a {
-    color: blue;
-    text-decoration: none;
+    text-decoration: none;    
  }
 
- a:visited {
-    color: blue; 
- }
+a:visited {    
+    text-decoration: none;
+}
 
  img {
     margin-left: 5px;
@@ -37,4 +36,24 @@
 
 h4 {
     color: white;
+}
+
+
+table {
+    border: 1px solid black;
+    width: 80%;
+    padding: 5px;
+
+    td {
+        border: 1px solid black;
+        padding: 5px;
+    }
+    
+    tr {
+        border: 1px solid black;
+    }
+}
+
+.fullscreen {
+    min-height: 90vh;    
 }

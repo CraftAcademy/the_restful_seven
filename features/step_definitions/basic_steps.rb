@@ -12,6 +12,7 @@ end
 
 Given("I click on the {string} button") do |button|
   click_button button
+
 end
 
 Given("I select {string} from {string}") do |option, list|
@@ -24,7 +25,20 @@ Given("the following categories is in the database") do |table|
   end
 end
 
+
+Given("the following articles are in the database") do |table|
+  table.hashes.each do |article_hash|
+    category = Category.find_by(name: article_hash[:category])
+    article_hash.except!("category")
+    create(:article, article_hash.merge(category: category))
+  end
+end
+
 Then("I am on the Sign up page") do
-  visit new_user_registration_path
+  visit new_user_registration_pathend
+end
+
+Given("I am on the dashboard") do
+  visit admin_root_path
 end
 

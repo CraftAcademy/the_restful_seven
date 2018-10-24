@@ -11,3 +11,7 @@ end
 Then("I see the message {string}") do |notice|
   expect(page).to have_css(".notice"), "Welcome! You have signed up successfully."
 end
+
+Then("I should not see {string}") do |content|
+  expect(page).not_to have_content content
+end
