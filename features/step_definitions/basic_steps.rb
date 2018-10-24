@@ -47,3 +47,8 @@ Given("I am on the dashboard") do
   visit admin_root_path
 end
 
+Given("the following user is registered") do |table|
+  table.hashes.each do |user|
+    create(:user, user)
+  end
+end
