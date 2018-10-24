@@ -1,10 +1,10 @@
 <div class="w-full max-w-lg container mx-auto px-4">
-  <div class="bg-grey-light shadow-md rounded px-8 pt-6 pb-8 mb-4">
+  <div class="bg-grey-light shadow-md rounded px-8 pt-6 pb-8 mb-8">
     <h2 class="block text-blue-dark text-xl text-center font-bold pb-2">Sign up</h2>
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= devise_error_messages! %>
 
-      <div class="field pb-2 pt-2">
+        <div class="field pb-2 pt-2">
         <%= f.label :email, class: "inline-flex leading-tight text-blue-dark text-sm font-bold" %>
         <%= f.email_field :email, class: "block shadow appearance-none border rounded w-2/3 py-2 px-2 text-grey-darker leading-tight focus:outline-none focus:shadow-outline", autofocus: true, autocomplete: "email" %>
       </div>

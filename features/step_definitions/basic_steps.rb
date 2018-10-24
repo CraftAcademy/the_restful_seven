@@ -25,7 +25,6 @@ Given("the following categories is in the database") do |table|
   end
 end
 
-
 Given("the following articles are in the database") do |table|
   table.hashes.each do |article_hash|
     category = Category.find_by(name: article_hash[:category])
@@ -37,7 +36,6 @@ end
 Given("I click {string}") do |link|
   click_on link
 end 
-
 
 Then("I am on the Sign up page") do
   visit new_user_registration_path
@@ -51,4 +49,8 @@ Given("the following user is registered") do |table|
   table.hashes.each do |user|
     create(:user, user)
   end
+end
+
+Then("I am on the Log in page") do
+  visit user_session_path
 end
