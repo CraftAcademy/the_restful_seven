@@ -31,8 +31,8 @@ Background:
 
   Scenario: Author can edit articles
     Given I am on the dashboard
-    And I click the "WW2" link
-    And I click the "Edit article" link
+    And I click "WW2" 
+    And I click "Edit article" 
     And I fill in "Content" with "Lots of battles!"
     And I click "Update"
     Then I should see "Article was successfully updated."
@@ -40,8 +40,8 @@ Background:
 
   Scenario: Author can delete an article
     Given I am on the dashboard
-    And I click the "WW2" link
-    And I click the "Delete article" link
+    And I click "WW2" 
+    And I click "Delete article" 
     Then I should see "Article was successfully deleted."
     And I should not see "WW2"
 

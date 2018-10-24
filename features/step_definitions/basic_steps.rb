@@ -10,12 +10,8 @@ Given("I fill in {string} with {string}") do |field, content|
     fill_in field, with: content
 end
 
-Given("I click {string}") do |button|
-  click_button button
-end
-
-Given("I click the {string} link") do |link|
-  click_link link
+Given("I click {string}") do |link|
+  click_on link
 end
 
 Given("I select {string} from {string}") do |option, list|
