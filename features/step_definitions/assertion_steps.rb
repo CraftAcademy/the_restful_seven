@@ -16,6 +16,10 @@ Then("I should see {string} link") do |link|
   expect(page).to have_content link
 end
 
-Then("I should see {string} within the {string} section") do |content, div|
-  expect(page).to have_content content within(:div, 'Latest News')
+Then("I should see {string} within the {string} section") do |content, categories|
+  within(:css, '#categories') {
+    binding.pry
+    expect(page).to have_content content 
+  }
+  
 end
