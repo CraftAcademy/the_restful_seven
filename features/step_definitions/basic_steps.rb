@@ -34,8 +34,13 @@ Given("the following articles are in the database") do |table|
   end
 end
 
+Given("I click {string}") do |link|
+  click_on link
+end 
+
+
 Then("I am on the Sign up page") do
-  visit new_user_registration_pathend
+  visit new_user_registration_path
 end
 
 Given("I am on the dashboard") do
