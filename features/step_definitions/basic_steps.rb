@@ -10,7 +10,7 @@ Given("I fill in {string} with {string}") do |field, content|
     fill_in field, with: content
 end
 
-Given("I click {string}") do |button|
+Given("I click on the {string} button") do |button|
   click_button button
 end
 
@@ -22,5 +22,9 @@ Given("the following categories is in the database") do |table|
   table.hashes.each do |category|
     create(:category, category)
   end
+end
+
+Then("I am on the Sign up page") do
+  visit new_user_registration_path
 end
 
