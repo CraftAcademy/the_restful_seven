@@ -9,11 +9,13 @@
     <button class="py-2 px-1 m-1 border rounded bg-grey-light hover:bg-blue-light" onclick="openDiv('technology')">Tech</button>
 
     <%= form_for :anything, url: "main/index" do |form| %>
-        <%= form.inputs do %>
-            <%= form.input :tags, :as => :select %>
+        <%#= form.inputs do %>
+            <%= form.collection_select :category,  as: :select, collection: ["Justin", "Kate", "Amelia", "Gus", "Meg"] %>
+        <%# end %>
     <% end %>
 
-    <% end %>
+        <%= select_tag "people",  options_for_select([ "VISA", "MasterCard" ], "MasterCard", onchange: 'Rails.fire(this.form, "submit")' ) %>
+
 
     <div class="category" id="all">
         <% @allfeed.each do | feed |%>
