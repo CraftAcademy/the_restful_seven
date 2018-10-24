@@ -3,8 +3,7 @@
 
     <%= form_tag("/", method: :get, remote: true) do %>
         <div class="field">
-            <label>Select Category:</label>
-            <%= select_tag(:category, options_for_select([ "All", "Sports", "General", "Technology", "asdsadsadsadsa"], @category_selected), 
+            <%= select_tag(:category, options_for_select([ "All", "Business", "Entertainment", "General", "Health", "Science", "Sports", "Technology"], @category_selected), 
                 onchange: 'Rails.fire(this.form, "submit")')%>
         </div>    
     <% end %>

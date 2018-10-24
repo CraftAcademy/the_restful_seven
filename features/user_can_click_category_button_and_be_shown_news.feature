@@ -9,14 +9,10 @@ Feature: Filter feed from news api into categories
         Given I am on the landing page
 
     Scenario: User should see category specific news when clicking on category menu
-        Then I should see "All" 
-        And I should see "General" 
-        And I should see "Business" 
-        And I should see "Entertainment" 
-        And I should see "Health" 
-        And I should see "Sports" 
-        And I should see "Technology" 
-        And I click the "Business" button
-        Then I should see "Hyderabad homes and pavements made from used plastic bags" 
+        When I select "Sports" from "category"
+        Then I should see "Hyderabad homes and pavements made from used plastic bags" within the "Latest News" section
         And I should see "Businesses in India may have found a way to turn plastic rubbish into a golden business opportunity."
         And I should see "Read the full story" link
+        When I select "Business" from "category"
+        Then I should see "something stubbed"
+        And I should see "something stubbed"
