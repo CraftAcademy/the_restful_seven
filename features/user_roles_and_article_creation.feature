@@ -43,7 +43,7 @@ Feature: User roles
     And I should see "Premium content"
     And I should see "Selfmade article"
     # And I should see "Battles"
-    And I should see "Snorre"
+    # And I should see "Snorre"
 
   Scenario: Premium user should not see dashboard [Sad path]
     Given I am signed is as "premium@example.com"
