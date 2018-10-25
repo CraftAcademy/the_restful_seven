@@ -22,7 +22,7 @@ Feature: User roles
     | Selfmade article   | Battles  | Snorre | true      | History     |
     | WW3                | Robots   | Snorre | false     | History     |
 
-  Scenario: Normal user can only see articles from API
+  Scenario: Normal user can only see articles from API [Happy path]
     Given I am signed is as "standard@example.com"
     And I visit the main page
     Then I should see "Top News"
@@ -30,29 +30,28 @@ Feature: User roles
     And I should see '.top-article-content' element
     And I should see 'Hurricane Michael erases beach town like'
   
-  Scenario: Normal user cannot see our articles from the database
+  Scenario: Normal user cannot see our articles from the database [Sad path]
     Given I am signed is as "standard@example.com"
     And I visit the main page
     Then I should not see "Selfmade article"
     
-  Scenario: Premium user should see premium content
+  Scenario: Premium user should see premium content [Happy path]
     Given I am signed is as "premium@example.com"
     And I visit the main page
     And I should see "Premium content"
     And I should see "Selfmade article"
     And I should see "Battles"
     And I should see "Snorre"
-    # Sad path: Cannot see dashboard
 
-  Scenario: Premium user should not see dashboard
+  Scenario: Premium user should not see dashboard [Sad path]
     Given I am signed is as "premium@example.com"
     And I visit the dashboard
     Then I should see "You are not authorized to enter"
     And I should see "Premium content"
 
 
-  Scenario: Author user
-    # Happy path: Can create an article
+  Scenario: Author user can create an article [Happy path]
+    
     # Sad path: Cannot approve an article
 
   Scenario: Editor user
