@@ -20,5 +20,6 @@ Feature: Filter feed from news api into categories
     @api_call_business 
     Scenario: asdasdasd
         When I select "Business" from "category"
-        Then I should see "something stubbed"
-        And I should see "something stubbed"
+        Then I should see "Hyderabad homes and pavements made from used plastic bags"
+        And I should see "Businesses in India may have found a way to turn plastic rubbish into a golden business opportunity."
+        And I should see "Read the full story" link
