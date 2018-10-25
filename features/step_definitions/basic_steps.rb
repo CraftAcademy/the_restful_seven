@@ -66,3 +66,22 @@ end
 Given("I visit the dashboard") do
   visit admin_root_path
 end
+
+Given("I click on {string} article {string} button") do |link_name, link|
+  article = Article.find_by(title: link_name)
+  within("#article_#{article.id}") do 
+    click_on link
+  end 
+end
+
+Then("I should see {string} on the {string} article") do |content, content_field|
+  article = Article.find_by(title: content_field)
+  within("#article_#{article.id}") do
+    expect(page).to have_content content
+  end
+end
+
+Given("I click the {string} checkbox") do |checkbox|
+  #find(:css, checkbox).set(true)
+  check checkbox
+end

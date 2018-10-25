@@ -4,7 +4,12 @@ Feature: Admin dashboard
   In order to manage the website,
   I would like to have an admin dashboard with moderator actions
 
-Background: 
+Background:
+  Given the following user is registered
+    | email                 | password | role           |
+    | author@example.com    | password | author         |
+    | editor@example.com    | password | editor         |
+
   Given the following categories is in the database
   | name      |
   | Inspiring |
@@ -17,8 +22,9 @@ Background:
   | WW3   | Robots   | Snorre | true     | History     | 
 
 
-  Scenario: Author can see dashboard
-    Given I am on the dashboard
+  Scenario: Author can see dashboard contents
+    Given I am signed is as "author@example.com"
+    And I am on the dashboard
     Then I should see "Dashboard"
     And I should see "WW2"
     And I should see "WW3"
@@ -30,6 +36,7 @@ Background:
     And I should see "false"
 
   Scenario: Author can edit articles
+    Given I am signed is as "author@example.com"
     Given I am on the dashboard
     And I click "WW2" 
     And I click "Edit article" 
@@ -39,11 +46,23 @@ Background:
     And I should see "Lots of battles!"
 
   Scenario: Author can delete an article
+    Given I am signed is as "author@example.com"
     Given I am on the dashboard
     And I click "WW2" 
     And I click "Delete article" 
     Then I should see "Article was successfully deleted."
     And I should not see "WW2"
+
+  Scenario: Editor can approve articles
+    Given I am signed is as "editor@example.com"
+    And I am on the dashboard
+    And I click on "WW2" article "Edit" button
+    And I click the "Approved" checkbox
+    And I click on the "Update" button
+    Then I should see "Article was successfully updated."
+    And I should see "true" on the "WW2" article
+  
+
 
 
    

@@ -49,11 +49,31 @@ Feature: User roles
     Then I should see "You are not authorized to enter"
     And I should see "Premium content"
 
-
   Scenario: Author user can create an article [Happy path]
+    Given I am signed is as "author@example.com"
+    And I am on the article creation page
+    And I fill in "Title" with "My first article"
+    And I fill in "Content" with "Content for my first article"
+    And I fill in "Author" with "Byggare Bob"
+    And I select "History" from "Category"
+    And I click on the "Submit" button
+    Then I should see "Article was successfully created."
+    And I should see "My first article"
+    And I should see "Content for my first article"
+    And I should see "History"
     
-    # Sad path: Cannot approve an article
+  
+  Scenario: Author does not enter title for article [sad path]
+    Given I am signed is as "author@example.com"
+    Given I am on the article creation page
+    And I fill in "Content" with "Content for my first article"
+    And I fill in "Author" with "Byggare Bob"
+    And I click on the "Submit" button
+    Then I should see "Title can't be blank"
+  
+  Scenario: Author does not enter title for article [sad path]
+    Given I am signed is as "author@example.com"
+    And I visit the dashboard
+    And I click on "WW3" article "Edit" button
+    Then I should not see "Approved"
 
-  Scenario: Editor user
-    # Can create and approve articles
-   
