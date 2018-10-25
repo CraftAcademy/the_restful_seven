@@ -28,7 +28,7 @@ Feature: User roles
     Then I should see "Top News"
     And I should see '.top-article-title' element
     And I should see '.top-article-content' element
-    And I should see 'Anwar Ibrahim returns to Malaysian politics'
+    And I should see 'Hurricane Michael erases beach town like'
   
   Scenario: Normal user cannot see our articles from the database
     Given I am signed is as "standard@example.com"

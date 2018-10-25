@@ -2,6 +2,10 @@ Given("I am on the landing page") do
   visit root_path
 end
 
+Given("I visit the main page") do
+  visit root_path
+end
+
 Given("I am on the article creation page") do
   visit new_admin_article_path
 end

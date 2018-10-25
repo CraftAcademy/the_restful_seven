@@ -1,5 +1,11 @@
 <section class="grid-container">
-  <div class="breaking-news"> <%= render 'partials/toparticle' %></div>
+  <div class="main-news"> 
+    <% if current_user.standard_user? %>
+      <%= render 'partials/toparticle' %>
+    <% else %>
+      <%= render 'partials/premium' %>
+    <% end %>
+  </div>
   <div class="news-feed py-2 px-4"><%= render 'partials/category' %></div>
   <div class="subscribe py-2 px-4"><h3>Subscribe</h3></div>
   <div class="comments py-2 px-4"><h3>Latest comments</h3></div>
