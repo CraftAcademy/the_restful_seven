@@ -62,3 +62,7 @@ Given("I am signed is as {string}") do |string|
   user = User.find_by(email: string)
   login_as(user)
 end
+
+Given("I visit the dashboard") do
+  visit admin_root_path
+end

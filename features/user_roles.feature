@@ -44,6 +44,13 @@ Feature: User roles
     And I should see "Snorre"
     # Sad path: Cannot see dashboard
 
+  Scenario: Premium user should not see dashboard
+    Given I am signed is as "premium@example.com"
+    And I visit the dashboard
+    Then I should see "You are not authorized to enter"
+    And I should see "Premium content"
+
+
   Scenario: Author user
     # Happy path: Can create an article
     # Sad path: Cannot approve an article
