@@ -1,6 +1,8 @@
-@javascript @api_call
-
+@javascript @api_call_main_page
 Feature: User can log-in
+    As a visitor,
+    In order to gain access to my account,
+    I would like to login.
 
     Background:
         Given the following user is registered
