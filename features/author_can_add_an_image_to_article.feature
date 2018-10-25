@@ -20,8 +20,8 @@ Feature: Author can add an image to article
       And I select "History" from "Category"
       And I attach "dummy_image.png" 
       And I click on the "Submit" button
-      Then I should see "dummy_image.png"
       Then I should see "Article was successfully created."
+      And I should see "dummy_image.png" image
       And I should see "My first article"
       And I should see "Content for my first article"
       And I should see "History"
