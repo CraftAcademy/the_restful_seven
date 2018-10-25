@@ -55,8 +55,7 @@ Then("I am on the Log in page") do
   visit user_session_path
 end
 
-# Given(/^I am signed in as “([^“]*)“$/) do |name|
-Given("I am signed in as {string}") do |name|
-  user = User.find_by(name: name)
-  login_as(user, scope: :user) 
+Given("I am signed is as {string}") do |string|
+  user = User.find_by(email: string)
+  login_as(user)
 end

@@ -5,6 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   
-  enum role: { user: 0, premium_user: 1, author: 2, editor: 3 }
+  enum role: { standard_user: 0, premium_user: 1, author: 2, editor: 3 }
   
 end
