@@ -5,11 +5,37 @@ Feature: User roles
 
   Background:
     Given the following users is in the database
-    ||||||
+    | email               | password | role         |
+    | user@example.com    | password | user         |
+    | premium@example.com | password | premium_user |
+    | author@example.com  | password | author       |
+    | editor@example.com  | password | editor       |
 
-  Scenario: Normal user
-    # Happy path: Can only log in and see the same as a logged in user
-    # Sad path: Cannot see premium stories
+    Given the following categories is in the database
+    | name      |
+    | Inspiring |
+    | History   |
+    | Science   |
+
+    Given the following articles are in the database
+    | title              | content  | author | approved | category    |
+    | Selfmade article   | Battles  | Snorre | false    | History     |
+    | WW3                | Robots   | Snorre | true     | History     |
+
+  Scenario: Normal user can only see articles from API
+    Given I am signed in as "user@example.com"
+    And I visit the main page
+    Then I should see "Latest News"
+    And I should see '.article-title' element
+    And I should see '.article-content' element
+    And I should see '.article-agency' element
+    And I should see 'Anwar Ibrahim returns to Malaysian politics'
+  
+  Scenario: Normal user cannot see our articles from the database
+    Given I am signed in as "user@example.com"
+    And I visit the main page
+    Then I should not see "Selfmade article"
+    
   Scenario: Premium user
     # Happy path: Can see premium articles
     # Sad path: Cannot see dashboard
