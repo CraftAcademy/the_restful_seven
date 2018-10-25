@@ -54,3 +54,7 @@ end
 Then("I am on the Log in page") do
   visit user_session_path
 end
+
+Given("I attach {string}") do |file_name|
+  attach_file('user_avatar', "#{::Rails.root}/spec/fixtures/dummy_image.png")
+end

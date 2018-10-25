@@ -9,4 +9,11 @@ RSpec.describe Article, type: :model do
     it { is_expected.to have_db_column :created_at }
     it { is_expected.to have_db_column :updated_at }
   end
+
+  describe 'Attachment' do
+    it 'is valid' do
+      subject.image.attach(io: File.open(fixture_path + '/dummy_image.png'), filename: 'dummy_image.png', content_type: 'image/png')
+      expect(subject.image).to be_attached
+    end
+  end
 end

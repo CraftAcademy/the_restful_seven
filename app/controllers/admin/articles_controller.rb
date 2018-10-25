@@ -1,4 +1,5 @@
 class Admin::ArticlesController < Admin::AdminController
+ 
   def new
     @article = Article.new
   end
