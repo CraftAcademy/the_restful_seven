@@ -1,0 +1,136 @@
+{
+    "status": "ok",
+    "totalResults": 2346,
+    "articles": [
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Hurricane Michael erases beach town like 'mother of all bombs'",
+            "description": "The storm snapped boats in two and knocked over 30-ton freight rail cars like toys.",
+            "url": "https://www.bbc.co.uk/news/world-us-canada-45839343",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1024x576/p06nljm9.jpg",
+            "publishedAt": "2018-10-12T13:16:34Z",
+            "content": "Media caption Aerial footage shows the destruction in Mexico Beach, Florida Hurricane Michael has all but rubbed a Florida beach town off the map after landing like the \"mother of all bombs\". The storm smashed into the state's north-west coast near the commun… [+8434 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "Ryder Cup 2018: Why we should all be excited about Tiger's return",
+            "description": "BBC Sport looks at the reasons why golf fans around the world are relishing the return of Tiger Woods to Ryder Cup action.",
+            "url": "https://www.bbc.co.uk/sport/golf/45658089",
+            "urlToImage": "https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/373B/production/_103593141_p06m78yq.jpg",
+            "publishedAt": "2018-09-27T05:03:47Z",
+            "content": "BBC Sport looks at the reasons why golf fans around the world are relishing the return of Tiger Woods to Ryder Cup action. WATCH MORE: McIlroy would welcome Woods match-up Find out how to the follow the Ryder Cup on BBC TV, Radio and online here. Available to… [+14 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Ferry with 335 people on fire in Baltic Sea",
+            "description": "All the passengers on the Lithuanian ship are safe, and a rescue operation is under way, officials say.",
+            "url": "https://www.bbc.co.uk/news/world-europe-45723500",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/6F1F/production/_103674482_e627f564-7638-494c-8222-c7c3e35a50ae.jpg",
+            "publishedAt": "2018-10-02T13:34:00Z",
+            "content": "Image copyright EPA Image caption The Regina Seaways ferry was on routed from Kiel to Klaipeda A rescue operation is under way after reports of a fire on a Lithuanian-flagged ferry carrying 335 people in the Baltic Sea. The Regina Seaways was en route from th… [+347 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Drew Barrymore: EgyptAir article goes viral",
+            "description": "An interview in EgyptAir's in-flight magazine got the star's fans talking - but is it all it seems?",
+            "url": "https://www.bbc.co.uk/news/entertainment-arts-45741043",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/1697C/production/_103704529_drewbarrymore.jpg",
+            "publishedAt": "2018-10-04T02:18:01Z",
+            "content": "Image copyright Getty Images Actor and producer Drew Barrymore, 43, has been a star since the tender age of six, when she pulled off a scene-stealing turn in Steven Spielberg's 1982 box office smash ET. But after decades of life in the public eye surely there… [+2736 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Italy: Migrants in Riace to be transferred away",
+            "description": "The government says it will transfer all migrants out of Riace - a town famous for welcoming them.",
+            "url": "https://www.bbc.co.uk/news/world-europe-45852952",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/12E99/production/_103856477_mediaitem103856473.jpg",
+            "publishedAt": "2018-10-13T21:55:13Z",
+            "content": "Image copyright Reuters Image caption Protesters demonstrating in support of Riace mayor Domenico Lucano Italy's interior ministry says all migrants in the southern town of Riace, famous for welcoming them, must be transferred away. The migrants will be moved… [+3180 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Climate report: Scientists politely urge 'Act now, idiots'",
+            "description": "A new study urges rapid and fundamental changes \"in all aspects of society\" to limit climate warming.",
+            "url": "https://www.bbc.co.uk/news/science-environment-45775309",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/FF5F/production/_103757356_ip5.png",
+            "publishedAt": "2018-10-08T01:00:12Z",
+            "content": "Image copyright Getty Images It's the final call, say scientists, the most extensive warning yet on the risks of rising global temperatures. Their dramatic report on keeping that rise under 1.5 degrees C states that the world is now completely off track, head… [+7862 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "Wimbledon: Final set tie-breaks to be introduced in 2019",
+            "description": "Final set tie-breaks will be introduced at Wimbledon from next year, the All England Lawn Tennis Club announces.",
+            "url": "https://www.bbc.co.uk/sport/tennis/45913728",
+            "urlToImage": "https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/13590/production/_97584297_breaking_news.png",
+            "publishedAt": "2018-10-19T10:17:19Z",
+            "content": "Final set tie-breaks will be introduced at Wimbledon from next year, the All England Lawn Tennis Club has announced. The decision comes after the final set between Kevin Anderson and John Isner in this year's Wimbledon men's semi-finals lasted almost three ho… [+595 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Is the EU really united over Brexit?",
+            "description": "It's all to do with money and timing, says the BBC's Europe editor Katya Adler.",
+            "url": "https://www.bbc.co.uk/news/av/world-europe-45879424/is-the-eu-really-united-over-brexit",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/96D1/production/_103890683_katya.jpg",
+            "publishedAt": "2018-10-16T23:22:25Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "The bang on the head that knocked English out of me",
+            "description": "Hannah Jenkins speaks English in the morning and German in the afternoon - it all started with a cycling accident.",
+            "url": "https://www.bbc.co.uk/news/disability-45804613",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/183C4/production/_103886299_mediaitem103885732.jpg",
+            "publishedAt": "2018-10-16T23:45:08Z",
+            "content": "Hannah Jenkins speaks English in the morning and German in the afternoon. It's not a routine she chose to adopt - but something her brain requires her to do. It all started with a cycling accident. Andrew Wilde was halfway up a mountain in the US state of Mon… [+8721 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "Paul Pogba & Jose Mourinho: Where do Manchester United go from here?",
+            "description": "All eye are on Paul Pogba and Jose Mourinho. Has there been a falling out? And where do Manchester United go from here?",
+            "url": "https://www.bbc.co.uk/sport/football/45651608",
+            "urlToImage": "https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/DD66/production/_103587665_pogbaglare.jpg",
+            "publishedAt": "2018-09-26T13:33:11Z",
+            "content": "Paul Pogba and Jose Mourinho appear to have a confrontation at Manchester United training on Wednesday A clip of Paul Pogba and Jose Mourinho having a training ground exchange - described as \"frosty footage\" on social media by one broadcaster - had two millio… [+8005 chars]"
+        }
+    ]
+}

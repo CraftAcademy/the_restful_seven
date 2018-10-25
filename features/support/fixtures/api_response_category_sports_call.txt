@@ -1,0 +1,136 @@
+{
+    "status": "ok",
+    "totalResults": 226,
+    "articles": [
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "Peter Brackley: Former BBC Radio Sport broadcaster and commentator dies aged 67",
+            "description": "Sports broadcaster and commentator Peter Brackley dies in hospital following a short illness.",
+            "url": "https://www.bbc.co.uk/sport/45858837",
+            "urlToImage": "https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/1820A/production/_103862889_mediaitem103862888.jpg",
+            "publishedAt": "2018-10-14T18:48:51Z",
+            "content": "Sports broadcaster and commentator Peter Brackley has died in hospital aged 67 following a short illness. The former BBC Radio Sport presenter worked on Sport on 2, the forerunner to 5 live Sport, in the 1970s and '80s before working for ITV and Sky. He was a… [+511 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "BBC Young Sports Personality of the Year 2018: Top 10 revealed",
+            "description": "Learn more about the 10 athletes named on the shortlist for the BBC Young Sports Personality of the Year 2018.",
+            "url": "https://www.bbc.co.uk/sport/sports-personality/45834257",
+            "urlToImage": "https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/144A0/production/_103840138_r1_ta_back_spoty_solo_rgb.jpg",
+            "publishedAt": "2018-10-15T08:01:39Z",
+            "content": "Media playback is not supported on this device Young Lion Foden takes Young Sports Personality Who will win this year's BBC Young Sports Personality of the Year? We can reveal the 10 athletes shortlisted for the award, with the winner set to be announced at t… [+3909 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "Women's sport: New research finds more than 80% of sports fans are interested",
+            "description": "A major new global study finds that 84% of general sports fans - more than half of whom are men - are interested in women's sport.",
+            "url": "https://www.bbc.co.uk/sport/45737718",
+            "urlToImage": "https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/4D1B/production/_103693791_ipiccy-collage.jpg",
+            "publishedAt": "2018-10-03T23:33:57Z",
+            "content": "Manchester City and England captain Steph Houghton was the most recognisable female team athlete in the UK A major new global study has found that 84% of general sports fans - more than half of whom are men - are interested in women's sport. The research by N… [+1982 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "BBC Young Sports Personality 2018: Kare Adenegan, Freya Anderson & James Bowen on shortlist",
+            "description": "Kare Adenegan, Freya Anderson and James Bowen are on the final shortlist for the BBC Young Sports Personality of the Year award.",
+            "url": "https://www.bbc.co.uk/sport/sports-personality/45908898",
+            "urlToImage": "https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/F372/production/_103922326_youngspoty.jpg",
+            "publishedAt": "2018-10-19T09:00:08Z",
+            "content": "The final three - Kare Adenegan, Freya Anderson and James Bowen Para-athlete Kare Adenegan, swimmer Freya Anderson and jockey James Bowen have been named on the final shortlist for the 2018 BBC Young Sports Personality of the Year award. The trio are still in… [+2879 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "Saul 'Canelo' Alvarez signs 'most lucrative' deal with sports service DAZN",
+            "description": "Saul 'Canelo' Alvarez signs one of sport's most lucrative contracts after agreeing a reported £278m deal with streaming service DAZN",
+            "url": "https://www.bbc.co.uk/sport/boxing/45887432",
+            "urlToImage": "https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/6860/production/_103902762_alvarez.jpg",
+            "publishedAt": "2018-10-17T15:50:08Z",
+            "content": "Alvarez (left) will take on Liverpool's Rocky Fielding in New York on 15 December Saul 'Canelo' Alvarez says he has signed an \"historic\" contract after agreeing a reported £278m ($365m) deal with streaming service DAZN. The Mexican, who holds the WBA and WBC … [+2063 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Meghan and Harry go head-to-head in netball shootout",
+            "description": "The royal couple go head-to-head in a netball shootout at Loughborough University.",
+            "url": "https://www.bbc.co.uk/news/uk-45628265",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/145E2/production/_103562438_meghanharrycomposite-3.jpg",
+            "publishedAt": "2018-09-24T17:39:49Z",
+            "content": "Image copyright Reuters/AFP Image caption The Duke and Duchess of Sussex laughed their way through the netball shootout Dancer Ginger Rogers famously did everything her partner Fred Astaire did, but backwards and in high heels. And the Duchess of Sussex seeme… [+2037 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "Deontay Wilder apologises for 'injuring' mascot on television show",
+            "description": "WBC heavyweight champion Deontay Wilder apologises if he injured a mascot after punching it live on television.",
+            "url": "https://www.bbc.co.uk/sport/boxing/45856979",
+            "urlToImage": "https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/104F6/production/_103860866_wilder11.jpg",
+            "publishedAt": "2018-10-14T14:16:02Z",
+            "content": "Wilder punched the mascot as part of a segment on Spanish language sports show Nacion ESPN WBC heavyweight champion Deontay Wilder has apologised if he injured a mascot after punching it on US television. It had been reported the American had broken the masco… [+742 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "Hamilton top in US GP second practice",
+            "description": "Lewis Hamilton fastest in heavy rain during US GP practice, where he can win a fifth world championship on Sunday.",
+            "url": "https://www.bbc.co.uk/sport/formula1/45921842",
+            "urlToImage": "https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/14229/production/_103937428_ham_5_getty.jpg",
+            "publishedAt": "2018-10-19T20:32:33Z",
+            "content": "Listen to final practice and qualifying on sports extra and the BBC Sport website from 18:55 BST on Saturday Lewis Hamilton was fastest in both Friday practice sessions on a wet day at the United States Grand Prix. It was the perfect start to the weekend for … [+375 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "England v New Zealand: Sam Burgess withdraws from squad for surgery",
+            "description": "Forward Sam Burgess withdraws from England's squad to face France and New Zealand to have shoulder and wrist surgery",
+            "url": "https://www.bbc.co.uk/sport/rugby-league/45756733",
+            "urlToImage": "https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/EF94/production/_103723316_burgess_getty.jpg",
+            "publishedAt": "2018-10-05T08:36:52Z",
+            "content": "Burgess has won 23 caps for England England v New Zealand Test series on the BBC Venues: KCOM Stadium, Hull; Anfield, Liverpool; Elland Road, Leeds Dates: 27 October to 11 November Coverage: Watch live coverage and highlights on BBC TV, Connected TV, online &… [+1575 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Cristiano Ronaldo rape allegation: Nike expresses deep concern",
+            "description": "The US sportswear giant has a contract worth a reported $1bn ($768m) with the Portuguese footballer.",
+            "url": "https://www.bbc.co.uk/news/world-europe-45753889",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/1649B/production/_103719219_51c780b2-1f1b-4aaa-abeb-0fc4ec8a1f2c.jpg",
+            "publishedAt": "2018-10-04T20:42:46Z",
+            "content": "Image copyright Reuters Image caption Cristiano Ronaldo has a lucrative contract with Nike Nike has said it is \"deeply concerned\" by rape allegations against footballer Cristiano Ronaldo. The US sportswear giant - which has a contract worth a reported $1bn (£… [+3120 chars]"
+        }
+    ]
+}

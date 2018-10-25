@@ -1,0 +1,14 @@
+<h1>Latest News</h1>
+<div class="container mx-auto px-4" id="categories">
+
+    <%= form_tag("/", method: :get, remote: true) do %>
+        <div class="field">
+            <%= select_tag(:category, options_for_select([ "All", "Business", "Entertainment", "General", "Health", "Science", "Sports", "Technology"], @category_selected), 
+                onchange: 'Rails.fire(this.form, "submit")')%>
+        </div>    
+    <% end %>
+
+    <div class="category" id="content">
+        <%= render partial: 'partials/categories_selected'%>
+    </div>
+</div>

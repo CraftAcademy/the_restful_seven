@@ -14,3 +14,7 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+document.addEventListener('turbolinks:load', ()=>{
+    App.windowContent = document.getElementById('content')
+})
