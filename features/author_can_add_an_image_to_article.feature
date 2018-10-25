@@ -31,7 +31,8 @@ Feature: Author can add an image to article
             | title | content  | author | approved | category    |
             | WW2   | Battles  | Snorre | false    | History     |
         And I am on the dashboard
-        And I click "edit"
+        And I click "Edit"
+        Then stop
         Then I should see "dummy_image.png" image 
         And I attach "smarty_image.png"  
         Then I should see "Article was successfully updated."
