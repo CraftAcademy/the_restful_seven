@@ -55,5 +55,5 @@ Then("I am on the Log in page") do
 end
 
 Given("I attach {string}") do |file_name|
-  attach_file('image', "#{::Rails.root}/features/support/fixtures/dummy_image.png")
+  attach_file('article[image]', "#{::Rails.root}/features/support/fixtures/dummy_image.png")
 end
