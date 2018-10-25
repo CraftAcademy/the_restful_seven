@@ -1,3 +1,4 @@
+@api_call_main_page
 Feature: Setting up news feed from API
     As a business owner,
     In order to display many articles,

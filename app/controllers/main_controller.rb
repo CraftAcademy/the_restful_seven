@@ -3,7 +3,7 @@ class MainController < ApplicationController
   def index
     if params[:category]
       @category_selected = params[:category]
-      @category_news = FeedService.get_feed(params[:category], 'bbc-news', 'bbc.co.uk', 10) 
+      @category_news = FeedService.get_feed(params[:category].downcase, 'bbc-news', 'bbc.co.uk', 10) 
       render :categories_feed
     else
       @category_selected = "All"
