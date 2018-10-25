@@ -1,4 +1,4 @@
-Given("I am/visit (on )the landing/main page") do
+Given("I am on the landing page") do
   visit root_path
 end
 
@@ -12,7 +12,6 @@ end
 
 Given("I click on the {string} button") do |button|
   click_button button
-
 end
 
 Given("I select {string} from {string}") do |option, list|
