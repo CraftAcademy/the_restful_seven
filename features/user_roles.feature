@@ -4,7 +4,7 @@ Feature: User roles
   I would like the users to have different roles depending on their access privileges
 
   Background:
-    Given the following users is in the database
+    Given the following user is registered
     | email               | password | role         |
     | user@example.com    | password | user         |
     | premium@example.com | password | premium_user |
