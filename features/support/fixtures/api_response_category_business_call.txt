@@ -1,0 +1,136 @@
+{
+    "status": "ok",
+    "totalResults": 389,
+    "articles": [
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Hyderabad homes and pavements made from used plastic bags",
+            "description": "Businesses in India may have found a way to turn plastic rubbish into a golden business opportunity.",
+            "url": "https://www.bbc.co.uk/news/av/business-45654891/hyderabad-homes-and-pavements-made-from-used-plastic-bags",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/7830/production/_103586703_p06m6664.jpg",
+            "publishedAt": "2018-09-26T23:20:58Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Trump at UN: Who does business with Iran?",
+            "description": "President Trump was highly critical of Iran in a speech at the UN",
+            "url": "https://www.bbc.co.uk/news/world-45640926",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/E0CB/production/_103574575_gettyimages-1017340004.jpg",
+            "publishedAt": "2018-09-25T23:25:07Z",
+            "content": "Image copyright AFP President Trump in an address at the UN general assembly asked all nations to isolate Iran. The US has recently reinstated tough economic sanctions which, said the president, will remain in place as long as Iranian aggression continues. Sa… [+4490 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Khashoggi murder: Crown prince due to speak at business forum",
+            "description": "The Saudi crown prince will be watched for any comments on the death of the writer in Turkey.",
+            "url": "https://www.bbc.co.uk/news/world-middle-east-45968185",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/9BE7/production/_104011993_mediaitem104011992.jpg",
+            "publishedAt": "2018-10-24T13:35:16Z",
+            "content": "Image copyright EPA Image caption The crown prince is scheduled to be on a panel at the forum The Saudi crown prince is expected to speak at a business forum in Riyadh and will be eagerly watched for comments on the murder of writer Jamal Khashoggi. Mohammed … [+5491 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Elon Musk's SpaceX rocket lights up California sky",
+            "description": "Launched from Vandenberg Air Force Base, the Falcon 9 rocket took an Argentine satellite into orbit.",
+            "url": "https://www.bbc.co.uk/news/world-us-canada-45782510",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/20E0/production/_103761480_tv049838376.jpg",
+            "publishedAt": "2018-10-08T07:55:01Z",
+            "content": "Image copyright EPA Image caption The launch lit up the skies in California Elon Musk's SpaceX company has successfully launched a satellite into space from California - wowing social media users in the process. The Falcon 9 rocket took Argentine satellite SA… [+1206 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Climate change economists win Nobel prize",
+            "description": "Professors William Nordhaus and Paul Romer win Nobel prize for research on global warming.",
+            "url": "https://www.bbc.co.uk/news/business-45785222",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/1785A/production/_103764369_williamnordhausimage.png",
+            "publishedAt": "2018-10-08T10:14:43Z",
+            "content": "Image copyright Yale Image caption William Nordhous's research has been to used to examine the consequences of climate policy interventions This year's Nobel prize for economics has been awarded to William Nordhaus and Paul Romer for their work on climate cha… [+846 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Kenyan crypto-currency pioneer: 'I make my money from Bitcoin and tasty roast meat'",
+            "description": "The rural eatery where you can buy a traditional favourite with the most modern of currencies.",
+            "url": "https://www.bbc.co.uk/news/world-africa-45889707",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/AE43/production/_103911644_betty1.jpg",
+            "publishedAt": "2018-10-22T01:22:49Z",
+            "content": "The towering vista of Mount Kenya provides an unlikely backdrop to a tech-savvy Kenyan restaurant that has embraced crypto-currencies as a form of payment. Betty's Place specialises in \"nyama choma\", a lip-smacking goat meat barbeque that is a firm favourite … [+7785 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "US-Iran: Trump set to chair key UN Security Council session",
+            "description": "The US leader is widely expected to renew his criticism of Iran at a security council session.",
+            "url": "https://www.bbc.co.uk/news/world-us-canada-45652670",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/E518/production/_103584685_049538554.jpg",
+            "publishedAt": "2018-09-26T11:43:38Z",
+            "content": "Image copyright EPA Image caption President Trump is seeking to isolate Iran internationally US President Donald Trump is expected to voice fresh criticism of Iran later when he chairs a UN Security Council session on the non-proliferation of weapons of mass … [+5027 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Cannabis in Canada: Who wins and who loses under new law",
+            "description": "Uruguay did it first, now Canada. Who will benefit from the new law change?",
+            "url": "https://www.bbc.co.uk/news/world-us-canada-45674260",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/7EFE/production/_103801523_gettyimages-50929586.jpg",
+            "publishedAt": "2018-10-14T23:42:05Z",
+            "content": "Image copyright Getty Images Image caption A Canadian flag with a marijuana leaf flies alongside Parliament Hill in Canada Canada is about to become the second nation to fully legalise recreational cannabis. When prohibition comes to an end on 17 October, Can… [+6961 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Mohammed Dewji: Reward offered for abducted Tanzania billionaire",
+            "description": "The family of \"Africa's youngest billionaire\" offers $440,000 for tips that would lead to his rescue.",
+            "url": "https://www.bbc.co.uk/news/world-africa-45865510",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/121E3/production/_103811247_tanz.jpg",
+            "publishedAt": "2018-10-15T14:46:38Z",
+            "content": "Image copyright AFP Image caption Financial magazine Forbes says Mohammed Dewji is worth $1.5bn (£980m) The family of Tanzanian billionaire Mohammed Dewji, who was kidnapped on Thursday, has offered a 1bn Tanzania shilling ($440,000; £330,000) reward for info… [+2326 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Police called on Atlanta man for 'babysitting while black'",
+            "description": "A black man in suburban Atlanta says police were called on him as he was \"babysitting while black\".",
+            "url": "https://www.bbc.co.uk/news/world-us-canada-45818176",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/AF1E/production/_103803844_editcollage.jpg",
+            "publishedAt": "2018-10-10T21:29:03Z",
+            "content": "Image copyright Corey Lewis Image caption Corey Lewis was questioned by the police while babysitting two children Corey Lewis was leaving a Subway sandwich shop in the US state of Georgia on Sunday with the two children he was babysitting, when a woman approa… [+2223 chars]"
+        }
+    ]
+}
