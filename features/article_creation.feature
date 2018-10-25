@@ -10,7 +10,7 @@ Feature: Article creation page
     | History   |
     | Science   |
 
-    Scenario: Author enters page and creates an article with a category
+    Scenario: Author creates an article
       Given I am on the article creation page
       And I fill in "Title" with "My first article"
       And I fill in "Content" with "Content for my first article"
