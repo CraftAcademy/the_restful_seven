@@ -59,5 +59,5 @@ Then("I should see {string} image") do |file_name|
 end
 
 Given("I attach {string}") do |file_name|
-  attach_file('article[image]', "#{::Rails.root}/features/support/fixtures/dummy_image.png")
+  attach_file('article[image]', "#{::Rails.root}/spec/fixtures/dummy_image.png")
 end
