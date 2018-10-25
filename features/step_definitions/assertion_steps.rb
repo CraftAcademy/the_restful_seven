@@ -18,8 +18,6 @@ end
 
 Then("I should see {string} within the {string} section") do |content, categories|
   within(:css, '#categories') {
-    binding.pry
     expect(page).to have_content content 
-  }
-  
+  }  
 end

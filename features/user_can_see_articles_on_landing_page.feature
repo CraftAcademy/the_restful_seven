@@ -1,5 +1,3 @@
-@javascript @api_call
-
 Feature: Setting up news feed from API
     As a business owner,
     In order to display many articles,
