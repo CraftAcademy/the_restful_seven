@@ -55,7 +55,7 @@ Then("I am on the Log in page") do
 end
 
 Then("I should see {string} image") do |file_name|
-  expect(page).to have_selector "img[src*=`#{file_name}`]"
+  expect(page).to have_selector "img[src*='#{file_name}']"
 end
 
 Given("I attach {string}") do |file_name|
