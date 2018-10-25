@@ -16,5 +16,5 @@ Feature: Setting up news feed from API
     Scenario: User should see a top news item from news_api
         Then I should see "Top News"
         And I should see '.top-article-title' element
-    
+        And I should see '.top-article-content' element
         
