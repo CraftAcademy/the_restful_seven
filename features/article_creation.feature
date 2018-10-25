@@ -16,7 +16,7 @@ Feature: Article creation page
       And I fill in "Content" with "Content for my first article"
       And I fill in "Author" with "Byggare Bob"
       And I select "History" from "Category"
-      And I click "Submit"
+      And I click on the "Submit" button
       Then I should see "Article was successfully created."
       And I should see "My first article"
       And I should see "Content for my first article"
@@ -26,5 +26,5 @@ Feature: Article creation page
       Given I am on the article creation page
       And I fill in "Content" with "Content for my first article"
       And I fill in "Author" with "Byggare Bob"
-      And I click "Submit"
+      And I click on the "Submit" button
       Then I should see "Title can't be blank"
