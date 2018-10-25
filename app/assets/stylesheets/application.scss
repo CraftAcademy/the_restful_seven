@@ -27,10 +27,17 @@ a:visited {
     float: left;
 }
 
- h4, p {
+ h3, p {
     display: grid;
+    margin-left: 5px;
     padding-left: 5px;
+    padding-bottom: 5px;   
 }
+
+h4 {
+    color: white;
+}
+
 
 table {
     border: 1px solid black;
