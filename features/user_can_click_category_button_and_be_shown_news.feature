@@ -1,7 +1,5 @@
 @javascript
 @api_call_main_page
-
-
 Feature: Filter feed from news api into categories
     As a visitor,
     In order to view articles within a specific category,

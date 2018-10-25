@@ -15,12 +15,6 @@
 //= require turbolinks
 //= require_tree .
 
-function openDiv(categories) {
-    let category = document.querySelectorAll(".category");
-        category.forEach( id => id.style.display = "none");
-        document.getElementById(categories).style.display = "block";
-}
-
 document.addEventListener('turbolinks:load', ()=>{
     App.windowContent = document.getElementById('content')
 })
