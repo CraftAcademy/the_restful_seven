@@ -1,3 +1,5 @@
+@javascript
+@api_call_main_page
 Feature: User roles
   As a site owner,
   in order to ensure the security of my website and the quality of its content,
