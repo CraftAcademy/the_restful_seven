@@ -45,6 +45,3 @@ Background:
     And I click "Delete article" 
     Then I should see "Article was successfully deleted."
     And I should not see "WW2"
-
-
-   

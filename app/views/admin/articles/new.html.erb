@@ -20,8 +20,7 @@
     <%= form.text_area :content, placeholder: "Content", class: "shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"%>
     <%= form.label :author, class:"block text-grey-darker text-sm font-bold mb-2" %>
     <%= form.text_field :author, placeholder: "Author", class: "shadow appearance-none border rounded py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" %>
-    <%= form.label :image %>
-    <%= form.file_field :image %>
+    <%= form.file_field :image, class: "bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 my-4 rounded focus:outline-none focus:shadow-outline" %>
     <%= form.select :category_id, Category.all.collect {|c| [ c.name, c.id ] }, {include_blank: 'Category'}, id: "Category", class: "block appearance-none mt-4 bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline" %>
     <%= form.submit value: "Submit", class: "bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 my-4 rounded focus:outline-none focus:shadow-outline" %>
   <% end %>
