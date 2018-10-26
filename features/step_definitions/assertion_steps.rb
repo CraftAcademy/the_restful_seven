@@ -30,6 +30,6 @@ Then("I should see {string} within the {string} section") do |content, categorie
   }  
 end
 
-# Then("stop") do
-#   binding.pry
-# end
+Then("stop") do
+  binding.pry
+end

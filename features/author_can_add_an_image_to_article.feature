@@ -33,9 +33,11 @@ Feature: Author can add an image to article
     Scenario: Author wants to edit the article image
         Given I am on the dashboard
         And I click "Edit"
-        And I attach "smarty_image.png"  
+        And I attach "dummy_image.png"  
+        Then stop
+        And I click on the "Update" button
         Then I should see "Article was successfully updated."
-        And I should see "smarty_image.png" image
+        And I should see "dummy_image.png" image
 
 
 
