@@ -1,6 +1,8 @@
 class MainController < ApplicationController
 
   def index
+    @premium_article = Article.first
+    
     if params[:category]
       @category_selected = params[:category]
       @category_news = FeedService.get_feed(params[:category].downcase, 'bbc-news', 'bbc.co.uk', 10) 

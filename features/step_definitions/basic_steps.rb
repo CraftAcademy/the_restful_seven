@@ -2,6 +2,10 @@ Given("I am on the landing page") do
   visit root_path
 end
 
+Given("I visit the main page") do
+  visit root_path
+end
+
 Given("I am on the article creation page") do
   visit new_admin_article_path
 end
@@ -52,4 +56,32 @@ end
 
 Then("I am on the Log in page") do
   visit user_session_path
+end
+
+Given("I am signed is as {string}") do |string|
+  user = User.find_by(email: string)
+  login_as(user)
+end
+
+Given("I visit the dashboard") do
+  visit admin_root_path
+end
+
+Given("I click on {string} article {string} button") do |link_name, link|
+  article = Article.find_by(title: link_name)
+  within("#article_#{article.id}") do 
+    click_on link
+  end 
+end
+
+Then("I should see {string} on the {string} article") do |content, content_field|
+  article = Article.find_by(title: content_field)
+  within("#article_#{article.id}") do
+    expect(page).to have_content content
+  end
+end
+
+Given("I click the {string} checkbox") do |checkbox|
+  #find(:css, checkbox).set(true)
+  check checkbox
 end

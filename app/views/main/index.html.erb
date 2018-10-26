@@ -1,5 +1,14 @@
 <section class="grid-container">
-  <div class="breaking-news"> <%= render 'partials/toparticle' %></div>
+  <div class="main-news"> 
+    <%# <%= render 'partials/toparticle' %>
+    <%# <%= render 'partials/premium' if current_user.premium_user? || current_user.author? || current_user.editor? %>
+    <% if current_user.nil? %>
+     <%= render 'partials/toparticle' %>
+    <% elsif current_user.standard_user? %>
+     <%= render 'partials/toparticle' %>
+    <% else %>
+     <%= render 'partials/premium' %>
+    <% end %></div>
   <div class="news-feed py-2 px-4"><%= render 'partials/category' %></div>
   <div class="subscribe py-2 px-4"><h3>Subscribe</h3></div>
   <div class="comments py-2 px-4"><h3>Latest comments</h3></div>

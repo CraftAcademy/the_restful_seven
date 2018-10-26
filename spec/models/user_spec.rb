@@ -14,7 +14,10 @@ RSpec.describe User, type: :model do
 
   describe 'Factory' do
       it 'should have valid Factory' do
-          expect(create(:user)).to be_valid
+          expect(create(:standard_user)).to be_valid
+          expect(create(:premium_user)).to be_valid
+          expect(create(:author)).to be_valid
+          expect(create(:editor)).to be_valid
       end
     end
 end
