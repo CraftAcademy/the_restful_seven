@@ -6,6 +6,10 @@ Feature: Author can add an image to article
     I would like to attach an image to the article.
 
     Background:
+    Given the following user is registered
+    | email                 | password | role    |
+    | standard@example.com  | password | editor  |
+
     Given the following categories is in the database
         | name      |
         | Inspiring |
@@ -15,6 +19,8 @@ Feature: Author can add an image to article
     Given the following articles are in the database
         | title | content  | author | approved | category    |
         | WW2   | Battles  | Snorre | false    | History     |
+
+    Given I am signed is as "standard@example.com"
 
     Scenario: Author creates an article with an image
         Given I am on the article creation page

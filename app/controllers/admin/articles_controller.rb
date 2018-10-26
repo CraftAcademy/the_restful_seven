@@ -1,5 +1,6 @@
 class Admin::ArticlesController < Admin::AdminController
- 
+  before_action :authorized_to_access_dashboard?
+
   def new
     @article = Article.new
   end

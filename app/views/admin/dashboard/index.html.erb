@@ -15,7 +15,7 @@
         <td>delete</td>
       </tr>
       <% @articles.each do |article| %>
-        <tr>        
+        <tr id="<%= dom_id(article) %>">        
           <td><%= article.id %></td>
           <td><%= article.category.name %></td>
           <td><%= link_to article.title, admin_article_path(article) %></td>
