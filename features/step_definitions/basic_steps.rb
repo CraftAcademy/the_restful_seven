@@ -93,3 +93,10 @@ Given("I click the {string} checkbox") do |checkbox|
   #find(:css, checkbox).set(true)
   check checkbox
 end
+
+
+Then("I should see {string} button within the {string} section") do |content, button|
+  within(:css, '#payment') {
+    expect(page).to have_content button
+  }  
+end
