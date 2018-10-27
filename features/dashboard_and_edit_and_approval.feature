@@ -1,3 +1,4 @@
+@javascript
 Feature: Admin dashboard
 
   As an admin,

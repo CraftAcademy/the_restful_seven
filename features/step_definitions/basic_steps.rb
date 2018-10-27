@@ -58,6 +58,14 @@ Then("I am on the Log in page") do
   visit user_session_path
 end
 
+Then("I should see {string} image") do |file_name|
+  expect(page).to have_selector "img[src*='#{file_name}']"
+end
+
+Given("I attach {string}") do |file_name|
+  attach_file('article[image]', "#{::Rails.root}/spec/fixtures/dummy_image.png")
+end
+
 Given("I am signed is as {string}") do |string|
   user = User.find_by(email: string)
   login_as(user)
