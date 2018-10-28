@@ -1,3 +1,5 @@
+@javascript
+@api_call_main_page
 Feature: User Management
   As an editor,
   in order to keep control of who can do what on our site,
@@ -21,7 +23,6 @@ Feature: User Management
   | Selfmade article   | Battles  | Snorre | true      | History     |
   | WW3                | Robots   | Snorre | false     | History     |
 
-  @javascript
   Scenario: An editor can promote/demote a user to a different role [happy path]
     Given I am signed in as "editor@example.com"
     And I visit the user management page
@@ -30,6 +31,13 @@ Feature: User Management
     And I click "Update"
     Then I should see "User was successfully updated"
     And I should see "author" within "standard@example.com" row
+
+  Scenario: An editor can delete a user
+    Given I am signed in as "editor@example.com"
+    And I visit the user management page
+    And I click on the "standard@example.com" user "Delete" button
+    And I confirm popup
+    Then I should see "User was successfully deleted."
 
 
   Scenario: A non-editor user cannot access the user management page [sad path]
