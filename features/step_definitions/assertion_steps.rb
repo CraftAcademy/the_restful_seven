@@ -30,6 +30,12 @@ Then("I should see {string} within the {string} section") do |content, categorie
   }  
 end
 
+Given("I click the {string} button within the {int} month subscription section") do |button, payment1|
+  within(:css, '#payment1') {
+    click_button button
+  }
+end
+
 Then("stop") do
   binding.pry
 end

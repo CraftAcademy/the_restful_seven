@@ -6,10 +6,9 @@ Feature: user can purchasea a subscription
 
     Scenario: User would like to sign up for a subscription service
         Given I am on the Sign up page     
-        And I click "Subscribe" button within the "1 month subscription" section
-        Then I should be on the Subscription page
-        And I fill in "Email" with "email@email.com"
-        And I fill in "Password" with "password"
-        And I fill in "Password confirmation" with "password"    
+        And I click the "Subscribe" button within the 1 month subscription section
+        Then I should be on the Subscription page   
         And I fill in the Stripe form
+        And I click the "Submit Payment" button
+        And I should be redirect to the main page
         

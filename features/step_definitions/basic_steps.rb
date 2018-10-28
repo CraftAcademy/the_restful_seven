@@ -101,5 +101,5 @@ Given("I click {string} button within the {string} section") do |button, section
 end
 
 Then("I should be on the Subscription page") do
-  visit 
+  visit new_subscription_path
 end
