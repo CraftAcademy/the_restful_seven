@@ -1,15 +1,17 @@
 <h1>Premium Content List </h1>
+<div class='container mx-auto mt-6'>
 <% @premium.each do |pr| %>
-<div class="container mx-auto mt-6 fullscreen">
-  <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto">
-    <img class="w-32" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
-    <div class="px-6 py-4">
-      <div class="font-bold text-xl mb-2"><%= pr.title %></div>
-      <p class="text-grey-darker text-base">
+    <%= image_tag pr.image, class: 'w-32' %>
+    <div class='max-w-sm rounded overflow-hidden shadow-lg mx-auto'>
+   <%# <img class="w-32" src="https://tailwindcss.com/img/card-top.jpg
+https://tailwindcss.com/img/card-top.jpg
+" alt="Sunset in the mountains"> %>
+    <div class='px-6 py-4'>
+        <div class='font-bold text-xl mb-2'><%= pr.title %></div>
+        <p class='text-grey-darker text-base'>
         <%= pr.content[1..100] %>
-        <%= link_to 'Read article',  %>
-      </p>
+        </p>
     </div>
     </div>
-</div>
-<% end %>
+    </div>
+<% end %> 
