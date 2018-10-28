@@ -90,6 +90,25 @@ Then("I should see {string} on the {string} article") do |content, content_field
 end
 
 Given("I click the {string} checkbox") do |checkbox|
-  #find(:css, checkbox).set(true)
   check checkbox
+end
+
+
+Given("I visit the user management page") do
+  visit admin_user_management_index_path
+end
+
+Given("I click on the {string} user {string} button") do |user_email, edit_button|
+  user = User.find_by(email: user_email)
+  within("#user_#{user.id}") do 
+  click_on edit_button
+  end 
+end
+
+Given("I select {string} in {string} list") do |string, string2|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then("I should see {string} within {string} row") do |string, string2|
+  pending # Write code here that turns the phrase above into concrete actions
 end
