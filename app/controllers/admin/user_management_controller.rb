@@ -1,4 +1,6 @@
 class Admin::UserManagementController < ApplicationController
+  before_action :editor?
+  
   def index
     @users = User.all
   end
