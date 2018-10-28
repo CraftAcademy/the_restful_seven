@@ -1,2 +1,24 @@
-<h1>Admin::UserManagement#edit</h1>
-<p>Find me in app/views/admin/user_management/edit.html.erb</p>
+<div class="w-full fullscreen container mx-auto">
+  <h1 class= "text-center mt-6">Edit User</h1>
+  <%= form_with url: admin_user_management_path(@user), scope: :user, method: :patch, local: true, class: "px-4 bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 mt-6" do |form| %>
+    <% if @user.errors.any? %>
+      <div id="error_explanation">
+        <h2>
+          <%= pluralize(@user.errors.count, "error") %> prohibited
+          this user from being saved:
+        </h2>
+        <ul>
+          <% @user.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <%= form.label :email, class: "block text-grey-darker text-sm font-bold mb-2" %>
+    <%= form.text_field :email, placeholder: "Email", class: "shadow appearance-none border rounded py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" %>
+    <%= form.label :role, class: "block text-grey-darker text-sm font-bold mb-2" %>
+    <%= form.select :role, ['standard_user', 'premium_user', 'author', 'editor'], {include_blank: 'Role'}, id: "Role", class: "block appearance-none mt-4 bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline" %>
+    <%= form.submit value: "Update", method: 'patch', class: "bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 my-4 rounded focus:outline-none focus:shadow-outline" %>   
+  <% end %>
+  <%= link_to "Dashboard", admin_root_path, class: "container mx-auto text-2xl mb-6" %>
+</div>

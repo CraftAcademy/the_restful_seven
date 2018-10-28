@@ -24,7 +24,7 @@ Background:
 
 
   Scenario: Author can see dashboard contents
-    Given I am signed is as "author@example.com"
+    Given I am signed in as "author@example.com"
     And I am on the dashboard
     Then I should see "Dashboard"
     And I should see "WW2"
@@ -37,7 +37,7 @@ Background:
     And I should see "false"
 
   Scenario: Author can edit articles
-    Given I am signed is as "author@example.com"
+    Given I am signed in as "author@example.com"
     Given I am on the dashboard
     And I click "WW2" 
     And I click "Edit article" 
@@ -47,7 +47,7 @@ Background:
     And I should see "Lots of battles!"
 
   Scenario: Author can delete an article
-    Given I am signed is as "author@example.com"
+    Given I am signed in as "author@example.com"
     Given I am on the dashboard
     And I click "WW2" 
     And I click "Delete article" 
@@ -55,7 +55,7 @@ Background:
     And I should not see "WW2"
 
   Scenario: Editor can approve articles
-    Given I am signed is as "editor@example.com"
+    Given I am signed in as "editor@example.com"
     And I am on the dashboard
     And I click on "WW2" article "Edit" button
     And I click the "Approved" checkbox

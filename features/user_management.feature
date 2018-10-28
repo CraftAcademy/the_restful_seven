@@ -11,17 +11,15 @@ Feature: User Management
     | author@example.com    | password | author         |
     | editor@example.com    | password | editor         |
 
-
+  @javascript
   Scenario: An editor can promote/demote a user to a different role
-    Given I am signed is as "editor@example.com"
+    Given I am signed in as "editor@example.com"
     And I visit the user management page
-    And I click on the "standard@example.com" user "Edit" link
-    And I select "author" in "role" list
+    And I click on the "standard@example.com" user "Edit" button
+    And I select "author" from "Role"
     And I click "Update"
-    Then I should see "User role was successfully updated"
+    Then I should see "User was successfully updated"
     And I should see "author" within "standard@example.com" row
-
-  
 
 
   Scenario: A non-editor user cannot access the user management page

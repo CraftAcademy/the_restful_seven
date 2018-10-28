@@ -20,7 +20,7 @@ Feature: Author can add an image to article
         | title | content  | author | approved | category    |
         | WW2   | Battles  | Snorre | false    | History     |
 
-    Given I am signed is as "standard@example.com"
+    Given I am signed in as "standard@example.com"
 
     Scenario: Author creates an article with an image
         Given I am on the article creation page
