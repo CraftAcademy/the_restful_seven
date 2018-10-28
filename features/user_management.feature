@@ -13,13 +13,13 @@ Feature: User Management
 
 
   Scenario: An editor can promote/demote a user to a different role
-   Given I am signed is as "editor@example.com"
-   And I visit the user management page
-   And I click on the "standard@example.com" user "edit" button
-   And I select "author" in "role" list
-   And I click "Update"
-   Then I should see "User role was successfully updated"
-   And I should see "author" within "standard@example.com" row
+    Given I am signed is as "editor@example.com"
+    And I visit the user management page
+    And I click on the "standard@example.com" user "Edit" link
+    And I select "author" in "role" list
+    And I click "Update"
+    Then I should see "User role was successfully updated"
+    And I should see "author" within "standard@example.com" row
 
   
 

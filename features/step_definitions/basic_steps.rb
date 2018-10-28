@@ -93,16 +93,15 @@ Given("I click the {string} checkbox") do |checkbox|
   check checkbox
 end
 
-
 Given("I visit the user management page") do
   visit admin_user_management_index_path
 end
 
-Given("I click on the {string} user {string} button") do |user_email, edit_button|
+Given("I click on the {string} user {string} link") do |user_email, edit_link|
   user = User.find_by(email: user_email)
-  within("#user_#{user.id}") do 
-  click_on edit_button
-  end 
+  within("#user_#{user.id}") do
+    click_on edit_link
+  end
 end
 
 Given("I select {string} in {string} list") do |string, string2|
