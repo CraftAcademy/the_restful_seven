@@ -1,4 +1,9 @@
 class SubscriptionsController < ApplicationController
-  def subscription
+  
+  def new
   end
+
+  def update
+  end
+  
 end
