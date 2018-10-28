@@ -94,9 +94,8 @@ Given("I click the {string} checkbox") do |checkbox|
   check checkbox
 end
 
-
-Then("I should see {string} button within the {string} section") do |content, button|
-  within(:css, '#payment') {
-    expect(page).to have_content button
-  }  
+Given("I click {string} button within the {string} section") do |button, section|
+  within(:css, '#payment') do
+    click_on button
+  end
 end
