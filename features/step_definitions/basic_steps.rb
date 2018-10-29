@@ -103,3 +103,7 @@ end
 Then("I should be on the Subscription page") do
   visit new_subscription_path
 end
+
+Then("I should be redirected to the landing page") do
+  redirect root_path
+end

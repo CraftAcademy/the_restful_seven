@@ -9,6 +9,5 @@ Feature: user can purchasea a subscription
         And I click the "Subscribe" button within the 1 month subscription section
         Then I should be on the Subscription page   
         And I fill in the Stripe form
-        And I click the "Submit Payment" button
-        And I should be redirect to the main page
+        And I should be redirected to the landing page
         
