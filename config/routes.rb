@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get 'premium_listing/index'
+  resources :premium_listings, only: [:show, :index]
+  # get 'premium_listing/index'
+  # get 'premium_listing/show'
   devise_for :users
  
   root controller: :main, action: :index
