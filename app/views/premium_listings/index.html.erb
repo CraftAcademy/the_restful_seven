@@ -1,12 +1,12 @@
-<h1>Premium Content List </h1>
+<h1 class="text-center">Premium Content List </h1>
 <div class='container mx-auto mt-6'>
 <% @premium.each do |pr| %>
   <div class='max-w-sm rounded overflow-hidden shadow-lg mx-auto'>
-    <%= image_tag pr.image, class: 'w-32' %>
+    <%= image_tag pr.image, class: 'w-32 mr-4' %>
     <div class='px-6 py-4'>
         <div class='font-bold text-xl mb-2'><%= pr.title %></div>
         <p class='text-grey-darker text-base'>
-        <%= pr.content[0..100] %>
+        <%= simple_format(pr.content[0..100]) %>
         </p>
         <%= link_to "Read article", premium_listing_path(pr), class: "container mx-auto text-2xl max-w-sm block mt-6" %>
 

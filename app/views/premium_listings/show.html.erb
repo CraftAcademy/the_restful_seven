@@ -1,17 +1,18 @@
+<h1 class="text-center">Premium Articles page </h1>
 <div class="container mx-auto mt-6 fullscreen">
   <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto">
     <%= image_tag @premium.image if @premium.image.attached? %>
       <img width="300px">
     <div class="px-6 py-4">
-      <div class="font-bold text-xl mb-2"><%= @premium.title %></div>
+      <div class="font-bold text-xl mb-2"><h3 class="pt-4"><%= @premium.title %></h3></div>
       <p class="text-grey-darker text-base">
-        <%= @premium.content%>
+        <%= simple_format(@premium.content) %>
       </p>
     </div>
     <div class="px-6 py-4">
-      <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2"><%= @premium.author%></span>
+      <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">Author: <%= @premium.author%></span>
       <span class="inline-block bg-purple-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#<%= @premium.category.name%></span>
     </div>    
   </div>
-  <%# <%= link_to "Edit article", premium_listing_index_path, class: "container mx-auto text-2xl max-w-sm block mt-6" %> %>
+   <%= link_to "Back to Premium content list", premium_listings_path, class: "container mx-auto text-2xl max-w-sm block mt-6 mb-6" %>
   </div>
