@@ -12,7 +12,8 @@ RSpec.describe 'Sessions', type: :request do
       expected_response = {'data' => {'id' => user.id,
                                       'uid' => user.email,
                                       'email' => user.email,
-                                      'provider' => 'email'}    
+                                      'provider' => 'email',
+                                      'role' => 'standard_user'}    
                                       }
 
       expect(JSON.parse(response.body)).to eq expected_response
