@@ -24,5 +24,8 @@ module TheRestfulSeven
       generate.controller_specs false
       generate.system_tests false
     end
+
+    config.stripe.secret_key = Rails.Application.credentials.stripe[:secret_key]
+    config.stripe.publishable_key = Rails.Application.credentials.stripe[:secret_key]
   end
 end
