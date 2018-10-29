@@ -1,26 +1,5 @@
 <h1>Subscriptions</h1>
 
-<div class="flex items-stretch bg-grey-lighter">
-  <div class="w-full max-w-lg container mx-auto px-6">
-    <div id='payment1' class="bg-grey-light shadow-md rounded px-8 py-8 m-6">
-      <h1>1 month subscription</h1>
-      <%= link_to "Subscribe", new_subscription_path, class: "bg-yellow hover:bg-blue-dark text-black flex-item-center font-bold py-2 px-4 pt-2 mb-2 rounded focus:outline-none focus:shadow-outline"%>
-    </div> 
-  </div>
-  <div class="w-full max-w-lg container mx-auto px-4">
-    <div id="payment6" class="bg-grey-light shadow-md rounded px-8 py-8 m-6">
-      <h1>6 month subscription</h1>
-      <%= link_to "Subscribe", new_subscription_path, class: "bg-yellow hover:bg-blue-dark text-black flex-item-center font-bold py-2 px-4 pt-2 mb-2 rounded focus:outline-none focus:shadow-outline"%>
-    </div> 
-  </div>
-  <div class="w-full max-w-lg container mx-auto px-4">
-    <div id="payment12" class="bg-grey-light shadow-md rounded px-8 py-8 m-6">
-      <h1>12 month subscription</h1>
-      <%= link_to "Subscribe", new_subscription_path, class: "bg-yellow hover:bg-blue-dark text-black flex-item-center font-bold py-2 px-4 pt-2 mb-2 rounded focus:outline-none focus:shadow-outline"%>
-    </div> 
-  </div>
-</div>
-
 <form action="/charge" method="post" id="payment-form">
   <div class="form-row">
     <label for="card-element">
@@ -33,3 +12,26 @@
 <br>
   <button>Submit Payment</button>
 </form>
+
+<div class="flex items-stretch bg-grey-lighter">
+  <div class="w-full max-w-lg container mx-auto px-6">
+    <div id='payment1' class="bg-grey-light shadow-md rounded px-8 py-8 m-6">
+      <h1>1 month subscription</h1>
+      <%= button_to "Subscribe", class: "bg-yellow hover:bg-blue-dark text-black flex-item-center font-bold py-2 px-4 pt-2 mb-2 rounded focus:outline-none focus:shadow-outline"%>
+    </div> 
+  </div>
+  <div class="w-full max-w-lg container mx-auto px-4">
+    <div id="payment6" class="bg-grey-light shadow-md rounded px-8 py-8 m-6">
+      <h1>6 month subscription</h1>
+      <%= button_to "Subscribe", class: "bg-yellow hover:bg-blue-dark text-black flex-item-center font-bold py-2 px-4 pt-2 mb-2 rounded focus:outline-none focus:shadow-outline"%>
+    </div> 
+  </div>
+  <div class="w-full max-w-lg container mx-auto px-4">
+    <div id="payment12" class="bg-grey-light shadow-md rounded px-8 py-8 m-6">
+      <h1>12 month subscription</h1>
+      <%= button_to "Subscribe", class: "bg-yellow hover:bg-blue-dark text-black flex-item-center font-bold py-2 px-4 pt-2 mb-2 rounded focus:outline-none focus:shadow-outline"%>
+    </div> 
+  </div>
+</div>
+
+

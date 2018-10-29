@@ -57,3 +57,7 @@ end
 Then("I should be on the main page") do
   expect(current_path).to eq root_path
 end
+
+Then("wait {int} second(s)") do |time|
+  sleep time
+end
