@@ -91,7 +91,7 @@ Given("I click the {string} checkbox") do |checkbox|
 end
 
 Given("I click {string} button within the {string} section") do |button, section|
-  within(:css, '#payment1') do
+  within('#payment1') do
     click_on button
   end
 end
