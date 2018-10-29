@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
-
+  protect_from_forgery with: :exception
+  
   private
 
   def authorized_to_access_dashboard?
