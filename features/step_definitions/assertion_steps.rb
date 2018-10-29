@@ -33,3 +33,21 @@ end
 Then("stop") do
   binding.pry
 end
+
+Then("I should see {string} on the {string} article") do |content, content_field|
+  article = Article.find_by(title: content_field)
+  within("#article_#{article.id}") do
+    expect(page).to have_content content
+  end
+end
+
+Then("I should see {string} within {string} row") do |role_name, email_name|
+  user = User.find_by(email: email_name)
+  within("#user_#{user.id}") do
+    expect(page).to have_content role_name
+  end
+end
+
+Then("I should be on the main page") do
+  expect(current_path).to eq root_path
+end

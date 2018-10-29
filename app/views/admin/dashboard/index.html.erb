@@ -1,6 +1,7 @@
 <section class="container mx-auto fullscreen">
   <h1 class="text-center pt-4">Dashboard</h1>
   <p><%= link_to "New Article", new_admin_article_path, class: "m-4 text-2xl" %></p>
+  <p><%= link_to "User Management", admin_user_management_index_path, class: "m-4 text-2xl" if current_user.editor? %></p>
   <div class="container mx-auto px-4 mt-10">
     <hr>
     <table>
