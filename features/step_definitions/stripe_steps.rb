@@ -6,5 +6,5 @@ Then("I fill in the Stripe form") do
     find_field('cvc').send_keys('567')
     find_field('postal').send_keys('11310')
   end
-  click_on 'Submit Payment'
+  #click_on 'Submit Payment'
 end

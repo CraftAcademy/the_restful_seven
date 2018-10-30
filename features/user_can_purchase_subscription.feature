@@ -16,5 +16,6 @@ Feature: User can purchase a subscription
         And I click on the "Subscribe" button
         Then I should be on the Subscription page
         And I fill in the Stripe form
-        And I click "Subscribe" button within the "1 month subscription" section
+        And I click the "Submit" button
+        Then I should see "Welcome as a subscriber"
         

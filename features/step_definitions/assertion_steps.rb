@@ -61,3 +61,7 @@ end
 Then("wait {int} second(s)") do |time|
   sleep time
 end
+
+Then("I should be on the Subscription page") do
+  expect(current_path).to eq new_subscription_path
+end
