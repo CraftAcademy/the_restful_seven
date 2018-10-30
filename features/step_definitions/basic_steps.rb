@@ -94,6 +94,8 @@ Given("I click {string} button within the {string} section") do |button, section
   within('#payment1') do
     click_on button
   end
+end
+
 Given("I visit the premium articles page") do
   visit premium_listings_path
 end

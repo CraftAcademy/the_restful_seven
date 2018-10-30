@@ -27,8 +27,9 @@ Feature: User can purchase a subscription
     Scenario: Logged in user wants to upgrade to Premium [happy path]
         Given I am signed in as "standard@example.com"
         And I visit the main page
-        And I click on the "Subscribe" button
-        Then I should be on the Subscription page      
+        And I click on the "Subscribe" button        
+        Then I should be on the Subscription page
+        Then wait 1 seconds      
         And I fill in the Stripe form with 'valid' credentials
         Then wait 1 seconds
         Then I should be redirected to the landing page
@@ -40,6 +41,7 @@ Feature: User can purchase a subscription
         And I visit the main page
         And I click on the "Subscribe" button
         Then I should be on the Subscription page
+        Then wait 1 seconds
         And I fill in the Stripe form with 'invalid' credentials
         Then wait 1 seconds
         Then I should be on the Subscription page

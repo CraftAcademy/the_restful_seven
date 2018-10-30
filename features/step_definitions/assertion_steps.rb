@@ -34,6 +34,8 @@ Given("I click the {string} button within the {int} month subscription section")
   within(:css, '#payment1') {
     click_button button
   }
+end
+
 Then("I am on the premium articles page") do
   expect(current_path).to eq premium_listings_path
 end
