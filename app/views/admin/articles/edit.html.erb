@@ -19,7 +19,7 @@
     <%= form.label :content, class: "block text-grey-darker text-sm font-bold mb-2" %>
     <%= form.text_area :content, placeholder: "Content", class: "mb-4 shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"%>
     <div class= "container mx-auto px-32 ">
-    <%= image_tag @article.image if @article.image.attached? %>
+      <%= image_tag @article.image if @article.image.attached? %>
     </div>
     <%= form.file_field :image, class: "font-bold py-2 px-4 my-2 rounded focus:outline-none focus:shadow-outline" %>
     <%= form.label :author, class:"block text-grey-darker text-sm font-bold mb-2" %>

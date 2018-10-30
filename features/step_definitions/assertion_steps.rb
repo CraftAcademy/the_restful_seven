@@ -30,6 +30,12 @@ Then("I should see {string} within the {string} section") do |content, categorie
   }  
 end
 
+Given("I click the {string} button within the {int} month subscription section") do |button, payment1|
+  within(:css, '#payment1') {
+    click_button button
+  }
+end
+
 Then("stop") do
   binding.pry
 end
@@ -50,4 +56,8 @@ end
 
 Then("I should be on the main page") do
   expect(current_path).to eq root_path
+end
+
+Then("wait {int} second(s)") do |time|
+  sleep time
 end
