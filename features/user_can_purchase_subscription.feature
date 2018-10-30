@@ -31,7 +31,7 @@ Feature: User can purchase a subscription
         Then I should be on the Subscription page
         Then wait 1 seconds      
         And I fill in the Stripe form with 'valid' credentials
-        Then wait 1 seconds
+        Then wait 3 seconds
         Then I should be redirected to the landing page
         Then I should see "Welcome as a subscriber"
 

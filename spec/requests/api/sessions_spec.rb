@@ -7,7 +7,7 @@ RSpec.describe 'Sessions', type: :request do
   describe 'POST /api/auth/sign_in' do
     it 'valid credentials returns user' do
       post '/api/auth/sign_in', params: {email: user.email,
-                                          password: user.password
+                                         password: user.password
                                       }, headers: headers
       expected_response = {'data' => {'id' => user.id,
                                       'uid' => user.email,

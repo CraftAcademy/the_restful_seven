@@ -1,4 +1,4 @@
-@javascript
+#@javascript
 @api_call_main_page
 Feature: User roles
   As a site owner,

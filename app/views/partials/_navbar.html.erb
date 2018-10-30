@@ -1,9 +1,8 @@
 <nav class="flex items-center justify-between flex-wrap bg-grey-darkest px-16 py-6">
   <div class="flex items-center flex-no-shrink text-white mr-6">
     <svg class="fill-current h-8 w-8 mr-2" width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"> <circle cx="50" cy="50" r="40" stroke="white" stroke-width="3" /></svg>
-    <%= link_to root_path do %>
-      <span class="font-semibold text-white text-4xl tracking-tight">The Restful News</span>
-    <% end %>
+    <span class="font-semibold text-4xl tracking-tight"><%= link_to "The Restful News", root_path, id: "back-to-landing" %></span>
+
   </div>
   <div class="block lg:hidden">
     <button class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white">
@@ -13,16 +12,12 @@
   <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
 
     <div class="text-sm lg:flex-grow">
-      <a href="#responsive-header" class="block mt-4 text-2xl lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
-        Language
-      </a>
       <% if current_user %>
         <%= link_to "Dashboard", admin_root_path, class: "block mt-4 text-2xl lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4 ml-10" if current_user.author? || current_user.editor? %>
       <% end %>
     </div>
       <% if user_signed_in? %>
-      <h4 class="content-center text-center">Signed in as:</h4>
-      <br>
+      <h4 class="content-center text-center w-24  ">Signed in as:</h4>
       <h4 class="content-center text-center"><%= current_user.email %></h4>
        <div>
         <% unless current_user.premium_user? %>
