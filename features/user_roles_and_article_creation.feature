@@ -41,9 +41,9 @@ Feature: User roles
     Given I am signed is as "premium@example.com"
     And I visit the main page
     And I should see "Premium content"
-    And I should see "Selfmade article"
-    # And I should see "Battles"
-    # And I should see "Snorre"
+    And I should see "WW3"
+    And I should see "Robots"
+    And I should see "Snorre"
 
   Scenario: Premium user should not see dashboard [Sad path]
     Given I am signed is as "premium@example.com"
