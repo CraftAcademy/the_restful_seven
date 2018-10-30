@@ -1,4 +1,3 @@
-@javascript
 @api_call_main_page
 Feature: Premium content page
   As a premium subscriber,
