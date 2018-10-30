@@ -61,6 +61,8 @@ ActiveRecord::Schema.define(version: 2018_10_29_132649) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
+    t.string "username"
     t.integer "role", default: 0
     t.string "provider", default: "email", null: false
     t.string "uid", default: "", null: false
