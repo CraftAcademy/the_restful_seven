@@ -34,7 +34,9 @@ Then("I am on the premium articles page") do
   expect(current_path).to eq premium_listings_path
 end
 
-
+Then("I am on the premium article page") do
+  expect(current_path).to eq premium_listing_path
+end
 
 Then("stop") do
   binding.pry
