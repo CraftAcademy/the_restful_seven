@@ -24,14 +24,25 @@ Feature: User can purchase a subscription
     | Selfmade article   | Battles  | Snorre | true      | History     |
     | WW3                | Robots   | Snorre | false     | History     |
 
+
     @api_call_stripe
-    Scenario: Logged in user wants to upgrade to Premium
+    Scenario: Logged in user wants to upgrade to Premium [happy path]
+        Given I am signed in as "standard@example.com"
+        And I visit the main page
+        And I click on the "Subscribe" button
+        Then I should be on the Subscription page      
+        And I fill in the Stripe form with 'valid' credentials
+        Then wait 1 seconds
+        Then I should be redirected to the landing page
+        Then I should see "Welcome as a subscriber"
+
+    @api_call_stripe
+    Scenario: Logged in user tries to pay with invalid credentials [sad path]
         Given I am signed in as "standard@example.com"
         And I visit the main page
         And I click on the "Subscribe" button
         Then I should be on the Subscription page
-        And I fill in the Stripe form
+        And I fill in the Stripe form with 'invalid' credentials
         Then wait 1 seconds
-        Then I should be redirected to the landing page
-        Then I should see "Welcome as a subscriber"
-        
+        Then I should be on the Subscription page
+        And I should see "Your card was declined"
