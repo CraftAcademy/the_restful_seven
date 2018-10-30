@@ -1,7 +1,6 @@
 class PremiumListingsController < ApplicationController
   def index
     @premium = Article.all
-    # @premium_articles (should be plural)
   end
 
   def show

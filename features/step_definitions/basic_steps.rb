@@ -93,3 +93,29 @@ Given("I click the {string} checkbox") do |checkbox|
   #find(:css, checkbox).set(true)
   check checkbox
 end
+
+
+
+
+
+
+Given("I am on the premium articles page") do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+
+
+Given("I click on the {string} link") do |string|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then("I am on the premium articles page") do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+
+
+Then("I am on the premium article page") do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
