@@ -94,28 +94,14 @@ Given("I click the {string} checkbox") do |checkbox|
   check checkbox
 end
 
-
-
-
-
-
-Given("I am on the premium articles page") do
-  pending # Write code here that turns the phrase above into concrete actions
+Given("I visit the premium articles page") do
+  visit premium_listings_path
 end
 
-
-
-Given("I click on the {string} link") do |string|
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-Then("I am on the premium articles page") do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-
-
-Then("I am on the premium article page") do
-  pending # Write code here that turns the phrase above into concrete actions
+Given("I click on {string} article {string} link") do |link_name, link|
+  article = Article.find_by(title: link_name)
+  within("#article_#{article.id}") do 
+    click_on link
+  end 
 end
 
