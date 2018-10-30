@@ -2,7 +2,6 @@ require 'coveralls'
 Coveralls.wear_merged!('rails')
 
 require 'spec_helper'
-require 'fake_stripe'
 
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../../config/environment', __FILE__)
@@ -23,12 +22,6 @@ RSpec.configure do |config|
   config.infer_spec_type_from_file_location!
   config.filter_rails_from_backtrace!
   config.include FactoryBot::Syntax::Methods
-end
-
-RSpec.configure do |config|
-  config.before(:each) do
-    FakeStripe.stub_stripe
-  end
 end
 
 Shoulda::Matchers.configure do |config|

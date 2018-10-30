@@ -33,7 +33,6 @@ end
 
 group :test do
   gem 'webmock'
-  gem 'fake_stripe'
 end
 
 group :development do
