@@ -34,8 +34,9 @@ Then("I am on the premium articles page") do
   expect(current_path).to eq premium_listings_path
 end
 
-Then("I am on the premium article page") do
-  expect(current_path).to eq premium_listing_path
+Then("I am on the premium article page {string}") do |name|
+  article = Article.find_by(title: name)
+  expect(current_path).to eq premium_listing_path(article)
 end
 
 Then("stop") do
