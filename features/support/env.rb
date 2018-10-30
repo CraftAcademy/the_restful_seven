@@ -1,7 +1,6 @@
 require 'coveralls'
 Coveralls.wear_merged!('rails')
 require 'cucumber/rails'
-require 'webmock/cucumber'
 
 ActionController::Base.allow_rescue = false
 
@@ -32,6 +31,7 @@ Capybara.server = :puma
 Capybara.javascript_driver = :chrome
 
 World(FactoryBot::Syntax::Methods)
+
 Before '@api_call_main_page' do 
   WebMock.disable_net_connect!(allow_localhost: true)
   stub_request(:get, "https://newsapi.org/v2/everything?domains=bbc.co.uk&language=en&pageSize=10&q=all&sources=bbc-news").
