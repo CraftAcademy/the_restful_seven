@@ -1,8 +1,6 @@
 @javascript 
 @api_call_main_page
 
-
-
 Feature: User can purchase a subscription
     As an Business Owner,
     In order to create revenue,
