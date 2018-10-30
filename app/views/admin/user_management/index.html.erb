@@ -1,0 +1,24 @@
+<section class="container mx-auto fullscreen">
+  <h1 class="text-center pt-4">User Management</h1>
+  <div class="container mx-auto px-4 mt-10">
+    <hr>
+    <table>
+      <tr class="font-bold">
+        <td>ID</td>
+        <td>email</td>
+        <td>role</td>
+        <td>Edit</td>
+        <td>delete</td>
+      </tr>
+      <% @users.each do |user| %>
+        <tr id="<%= dom_id(user) %>">        
+          <td><%= user.id %></td>
+          <td><%= link_to user.email, admin_user_management_path(user) %></td>
+          <td><%= user.role %></td>
+          <td><%= link_to "Edit", edit_admin_user_management_path(user) %></td>
+          <td><%= link_to "Delete", admin_user_management_path(user),  method: :delete, data: {confirm: 'Are you sure?'} %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+</section>

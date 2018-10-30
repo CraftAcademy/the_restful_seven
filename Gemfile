@@ -14,6 +14,8 @@ gem 'turbolinks', '~> 5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'news-api'
 gem 'devise'
+gem 'devise_token_auth'
+gem 'rack-cors', require: 'rack/cors'
 
 group :development, :test do
   gem 'coveralls', require: false

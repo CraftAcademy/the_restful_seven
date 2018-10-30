@@ -24,5 +24,11 @@ module TheRestfulSeven
       generate.controller_specs false
       generate.system_tests false
     end
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins '*'
+        resource '*', headers: :any, methods: [:get, :post, :put, :delete]
+      end
+    end
   end
 end

@@ -6,6 +6,10 @@ Given("I visit the main page") do
   visit root_path
 end
 
+Given("I visit the user management page") do
+  visit admin_user_management_index_path
+end
+
 Given("I am on the article creation page") do
   visit new_admin_article_path
 end
@@ -66,7 +70,7 @@ Given("I attach {string}") do |file_name|
   attach_file('article[image]', "#{::Rails.root}/spec/fixtures/dummy_image.png")
 end
 
-Given("I am signed is as {string}") do |string|
+Given("I am signed in as {string}") do |string|
   user = User.find_by(email: string)
   login_as(user)
 end
@@ -82,15 +86,7 @@ Given("I click on {string} article {string} button") do |link_name, link|
   end 
 end
 
-Then("I should see {string} on the {string} article") do |content, content_field|
-  article = Article.find_by(title: content_field)
-  within("#article_#{article.id}") do
-    expect(page).to have_content content
-  end
-end
-
 Given("I click the {string} checkbox") do |checkbox|
-  #find(:css, checkbox).set(true)
   check checkbox
 end
 
@@ -105,3 +101,13 @@ Given("I click on {string} article {string} link") do |link_name, link|
   end 
 end
 
+Given("I click on the {string} user {string} button") do |email_name, edit_button|
+  user = User.find_by(email: email_name)
+  within("#user_#{user.id}") do 
+    click_link edit_button    
+  end
+end
+
+Given("I confirm popup") do
+  page.driver.browser.switch_to.alert.accept
+end
