@@ -31,7 +31,7 @@ module TheRestfulSeven
       end
     end
 
-    config.stripe.secret_key = Rails.Application.credentials.stripe[:secret_key]
-    config.stripe.publishable_key = Rails.Application.credentials.stripe[:secret_key]
+    config.stripe.secret_key = Rails.application.credentials.stripe[:secret_key]
+    config.stripe.publishable_key = Rails.application.credentials.stripe[:secret_key]
   end
 end
