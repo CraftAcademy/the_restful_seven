@@ -6,7 +6,7 @@
     <div class='px-6 py-4'>
         <div class='font-bold text-xl mb-2'><%= article.title %></div>
         <p class='text-grey-darker text-base'>
-        <%= simple_format(article.content.truncate_words(80)) %>
+        <%= simple_format(article.content.truncate_words(82)) %>
         </p>
         <%= link_to "Read full article", premium_listing_path(article), class: "container mx-auto text-md max-w-sm block mt-6" %>
     </div>
