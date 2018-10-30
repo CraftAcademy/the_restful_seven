@@ -29,8 +29,6 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'chromedriver-helper'
   gem 'selenium-webdriver'
-  gem 'webmock'
-  gem 'fake_stripe'
 end
 
 group :test do
