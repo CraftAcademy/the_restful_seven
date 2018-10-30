@@ -1,7 +1,7 @@
 class MainController < ApplicationController
 
   def index
-    @premium_article = Article.first
+    @premium_article = Article.last
     
     if params[:category]
       @category_selected = params[:category]
