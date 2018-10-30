@@ -21,8 +21,9 @@ Feature: Premium content page
     | Selfmade article   | Battles  | Snorre | true      | History     |
     | WW3                | Robots   | Snorre | false     | History     |  
 
-  Scenario: Premium user can see list of premium content [Happy path]
     Given I am signed in as "premium@example.com"
+
+  Scenario: Premium user can see list of premium content [Happy path]
     And I visit the main page
     And I click "View all Premium Articles"
     Then I am on the premium articles page
@@ -31,7 +32,6 @@ Feature: Premium content page
     And I should see "Battles"
     
   Scenario: Premium user reads full premium article [Happy path]
-    Given I am signed in as "premium@example.com"
     And I visit the premium articles page
     And I click on "Selfmade article" article "Read full article" link
     Then I am on the premium article page "Selfmade article"
