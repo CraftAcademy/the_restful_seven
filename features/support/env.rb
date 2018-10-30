@@ -73,3 +73,12 @@ Before '@api_call_business' do
     }).
     to_return(status: 200, body: Rails.root.join('features', 'support', 'fixtures', 'api_response_category_business_call.txt').read, headers: {})
 end
+
+Before '@api_call_stripe' do
+  WebMock.disable!
+end
+
+After '@api_call_stripe' do
+  WebMock.enable!
+end
+
