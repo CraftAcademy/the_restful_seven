@@ -1,5 +1,5 @@
 <h1>Top News</h1>  
-<h3 class="top-article-title"><%= @top_article.title %></h3>
-<img width='600px' src="<%= @top_article.urlToImage %>">
-<p class="top-article-content"><%= @top_article.description %></p>
-<p class="top-article"><%= link_to "Read the full story on #{@top_article.name}", @top_article.url %></p>
+<h3 class="top-article-title mt-4 mb-2"><%= @top_article.title %></h3>
+<img class="flex-row" width='500px' src="<%= @top_article.urlToImage %>">
+<p class="top-article-content mt-2"><%= @top_article.description %></p>
+<p class="top-article mt-2"><%= link_to "Read the full story on #{@top_article.name}", @top_article.url, target: :_blank %></p>
