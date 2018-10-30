@@ -30,5 +30,8 @@ module TheRestfulSeven
         resource '*', headers: :any, methods: [:get, :post, :put, :delete]
       end
     end
+
+    config.stripe.secret_key = Rails.application.credentials.stripe[:secret_key]
+    config.stripe.publishable_key = Rails.application.credentials.stripe[:secret_key]
   end
 end

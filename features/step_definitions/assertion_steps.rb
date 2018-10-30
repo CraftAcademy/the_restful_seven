@@ -30,6 +30,12 @@ Then("I should see {string} within the {string} section") do |content, categorie
   }  
 end
 
+Given("I click the {string} button within the {int} month subscription section") do |button, payment1|
+  within(:css, '#payment1') {
+    click_button button
+  }
+end
+
 Then("I am on the premium articles page") do
   expect(current_path).to eq premium_listings_path
 end
@@ -58,5 +64,17 @@ Then("I should see {string} within {string} row") do |role_name, email_name|
 end
 
 Then("I should be on the main page") do
+  expect(current_path).to eq root_path
+end
+
+Then("wait {int} second(s)") do |time|
+  sleep time
+end
+
+Then("I should be on the Subscription page") do
+  expect(current_path).to eq new_subscription_path
+end
+
+Then("I should be redirected to the landing page") do
   expect(current_path).to eq root_path
 end

@@ -1,5 +1,6 @@
 @javascript
 @api_call_main_page
+
 Feature: Filter feed from news api into categories
     As a visitor,
     In order to view articles within a specific category,
@@ -18,6 +19,6 @@ Feature: Filter feed from news api into categories
     @api_call_business 
     Scenario: User selects business and sees relevant news 
         When I select "Business" from "category"
-        Then I should see "Hyderabad homes and pavements made from used plastic bags"
-        And I should see "Businesses in India may have found a way to turn plastic rubbish into a golden business opportunity."
+        Then I should see "Brazil economy: Can Bolsonaro ride the 'Bullsonaro wave"
+        And I should see "Businesses and markets are embracing Jair Bolsonaro; but his policies are vague and untested."
         And I should see "Read the full story" link

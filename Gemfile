@@ -16,6 +16,7 @@ gem 'news-api'
 gem 'devise'
 gem 'devise_token_auth'
 gem 'rack-cors', require: 'rack/cors'
+gem 'stripe-rails'
 
 group :development, :test do
   gem 'coveralls', require: false
@@ -28,6 +29,9 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'chromedriver-helper'
   gem 'selenium-webdriver'
+end
+
+group :test do
   gem 'webmock'
 end
 
