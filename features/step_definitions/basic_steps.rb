@@ -96,11 +96,6 @@ Given("I click {string} button within the {string} section") do |button, section
   end
 end
 
-
-Then("I should be redirected to the landing page") do
-  redirect root_path
-end
-
 Given("I click on the {string} user {string} button") do |email_name, edit_button|
   user = User.find_by(email: email_name)
   within("#user_#{user.id}") do 

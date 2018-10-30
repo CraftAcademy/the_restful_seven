@@ -65,3 +65,7 @@ end
 Then("I should be on the Subscription page") do
   expect(current_path).to eq new_subscription_path
 end
+
+Then("I should be redirected to the landing page") do
+  expect(current_path).to eq root_path
+end
