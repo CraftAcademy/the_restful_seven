@@ -29,7 +29,6 @@ Feature: User roles
     And I visit the main page
     Then I should see "Top News"
     And I should see '.top-article-title' element
-    And I should see '.top-article-content' element
     And I should see 'Hurricane Michael erases beach town like'
   
   Scenario: Normal user cannot see our articles from the database [Sad path]
