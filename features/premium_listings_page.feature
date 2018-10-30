@@ -35,7 +35,6 @@ Feature: Premium content page
     And I visit the premium articles page
     And I click on "Selfmade article" article "Read full article" link
     Then I am on the premium article page "Selfmade article"
-    And I should see "Premium Article"
     And I should see "Selfmade article"
     And I should see "Battles"
     And I should see "Back to Premium Articles list" link
