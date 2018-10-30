@@ -3,43 +3,54 @@
 //= require turbolinks
 //= require_tree .
 
+const stripeTokenHandler = (token) => {
+  var form = document.getElementById('payment-form');
+  var hiddenInput = document.createElement('input');
+  hiddenInput.setAttribute('type', 'hidden');
+  hiddenInput.setAttribute('name', 'stripeToken');
+  hiddenInput.setAttribute('value', token.id);
+  form.appendChild(hiddenInput);
+
+  form.submit();
+}
+
 const initiateStripe = () => {
 
-var stripe = Stripe('pk_test_YNLQm57HHhtQoCSUtcAFxR02');
+  var stripe = Stripe('pk_test_vALktyp7aQ6KUWjCDgwVcnG2');
 
-var elements = stripe.elements();
+  var elements = stripe.elements();
 
-var style = {
-  base: {
-    color: '#32325d',
-    lineHeight: '18px',
-    fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
-    fontSmoothing: 'antialiased',
-    fontSize: '16px',
-    '::placeholder': {
-      color: '#aab7c4'
+  var style = {
+    base: {
+      color: '#32325d',
+      lineHeight: '18px',
+      fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+      fontSmoothing: 'antialiased',
+      fontSize: '16px',
+      '::placeholder': {
+        color: '#aab7c4'
+      }
+    },
+    invalid: {
+      color: '#fa755a',
+      iconColor: '#fa755a'
     }
-  },
-  invalid: {
-    color: '#fa755a',
-    iconColor: '#fa755a'
-  }
-};
+  };
 
-var card = elements.create('card', {style: style});
+  var card = elements.create('card', {style: style});
 
-card.mount('#card-element');
+  card.mount('#card-element');
 
-card.addEventListener('change', function(event) {
-  var displayError = document.getElementById('card-errors');
-  if (event.error) {
-    displayError.textContent = event.error.message;
-  } else {
-    displayError.textContent = '';
-  }
-});
+  card.addEventListener('change', function(event) {
+    var displayError = document.getElementById('card-errors');
+    if (event.error) {
+      displayError.textContent = event.error.message;
+    } else {
+      displayError.textContent = '';
+    }
+  });
 
-var form = document.getElementById('payment-form');
+  var form = document.getElementById('payment-form');
   form.addEventListener('submit', function(event) {
     event.preventDefault();
 

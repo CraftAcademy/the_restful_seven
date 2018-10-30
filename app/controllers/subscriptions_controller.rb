@@ -1,18 +1,19 @@
 class SubscriptionsController < ApplicationController
   
   def new
+    @amount = 3000
   end
 
   def create
     customer = Stripe::Customer.create(
       email: current_user.email,
       source: params[:stripeToken],
-      description: current_user.display_name
+      description: current_user.email
     )
 
     charge = Stripe::Charge.create(
       customer: customer.id,
-      amount: 5000,
+      amount: 3000,
       description: 'Restful News Subscription',
       currency: 'EUR'
     )

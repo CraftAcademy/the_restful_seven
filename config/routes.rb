@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'subscriptions/new'
   devise_for :users
  
   root controller: :main, action: :index 
