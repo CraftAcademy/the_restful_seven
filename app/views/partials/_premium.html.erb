@@ -1,16 +1,19 @@
 <h1>Premium content</h1>
 <div class="container mx-auto mt-6 fullscreen">
-  <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto">
-    <img class="w-full" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
+  <div class="max-w-lg rounded overflow-hidden shadow-lg mx-auto">
+    <%# <img class="w-full" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains"> %>
+    <%= image_tag @premium_article.image, class: 'w-64 mr-4' if @premium_article.image.attached? %>
+
     <div class="px-6 py-4">
       <div class="font-bold text-xl mb-2"><%= @premium_article.title %></div>
       <p class="text-grey-darker text-base">
-        <%= @premium_article.content%>
+        <%= @premium_article.content.truncate_words(100)%>
       </p>
     </div>
     <div class="px-6 py-4">
       <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2"><%= @premium_article.author%></span>
       <span class="inline-block bg-purple-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#<%= @premium_article.category.name%></span>
-    </div>    
+    </div>  
+       <%= link_to "View all Premium Articles", premium_listings_path, class: "container mx-auto text-2xl max-w-sm block mt-6 mb-6" %>  
   </div>
 </div>

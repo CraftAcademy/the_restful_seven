@@ -90,6 +90,17 @@ Given("I click the {string} checkbox") do |checkbox|
   check checkbox
 end
 
+Given("I visit the premium articles page") do
+  visit premium_listings_path
+end
+
+Given("I click on {string} article {string} link") do |link_name, link|
+  article = Article.find_by(title: link_name)
+  within("#article_#{article.id}") do 
+    click_on link
+  end 
+end
+
 Given("I click on the {string} user {string} button") do |email_name, edit_button|
   user = User.find_by(email: email_name)
   within("#user_#{user.id}") do 
