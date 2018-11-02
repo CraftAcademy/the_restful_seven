@@ -1,15 +1,17 @@
 <h1 class="text-center">Premium Articles page </h1>
 <div class='container mx-auto mt-6'>
 <% @premium.each do |article| %>
-  <div id="<%= dom_id(article) %>" class='max-w-lg rounded overflow-hidden shadow-md mx-auto mt-4 mb-4'>
-    <%= image_tag article.image, class: 'h-48 mr-4' if article.image.attached? %>
-    <div class='px-6 py-4'>
-        <div class='font-bold text-xl mb-2'><%= article.title %></div>
-        <p class='text-grey-darker text-base'>
-        <%= simple_format(article.content.truncate_words(82)) %>
-        </p>
-        <%= link_to "Read full article", premium_listing_path(article), class: "container mx-auto text-md max-w-sm block mt-6" %>
+  <% if article.approved == true %>
+    <div id="<%= dom_id(article) %>" class='max-w-lg rounded overflow-hidden shadow-md mx-auto mt-4 mb-4'>
+      <%= image_tag article.image, class: 'h-48 mr-4' if article.image.attached? %>
+      <div class='px-6 py-4'>
+          <div class='font-bold text-xl mb-2'><%= article.title %></div>
+          <p class='text-grey-darker text-base'>
+          <%= simple_format(article.content.truncate_words(82)) %>
+          </p>
+          <%= link_to "Read full article", premium_listing_path(article), class: "container mx-auto text-md max-w-sm block mt-6" %>
+      </div>
     </div>
-  </div>
+  <% end %>
 </div>
 <% end %>
