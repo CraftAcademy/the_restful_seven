@@ -1,23 +1,21 @@
 <h1>Premium content</h1>
 <div class="container mx-auto mt-6 fullscreen">
   <div class="max-w-2xl rounded overflow-hidden mx-auto">
-    <% if @premium_article.approved == true %>
-      <%= image_tag @premium_article.image, class: 'w-64 mr-4' if @premium_article.image.attached? %>
+    <%= image_tag @premium_article.image, class: 'w-64 mr-4' if @premium_article.image.attached? %>
 
-      <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2"><%= @premium_article.title %></div>
-        <p class="text-grey-darker text-base">
-          <%= @premium_article.content.truncate_words(100)%>
-          <%= link_to "Read full article", premium_listing_path(@premium_article), class: "block mx-auto text-md   max-w-sm" %>
-        </p>
-      </div>
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2"><%= @premium_article.title %></div>
+      <p class="text-grey-darker text-base">
+        <%= @premium_article.content.truncate_words(100)%>
+        <%= link_to "Read full article", premium_listing_path(@premium_article), class: "block mx-auto text-md   max-w-sm" %>
+      </p>
+    </div>
 
-      <div class="px-6 py-4">
-        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">Author: <%= @premium_article.author%></span>
-        <span class="inline-block bg-purple-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#<%= @premium_article.category.name%></span>
+    <div class="px-6 py-4">
+      <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">Author: <%= @premium_article.author%></span>
+      <span class="inline-block bg-purple-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#<%= @premium_article.category.name%></span>
 
-      </div>  
-      <%= link_to "View all Premium Articles", premium_listings_path, class: "mr-2 container mx-auto text-xl max-w-sm inline-block mt-6 mb-2" %>  
-    <% end %>
+    </div>  
+    <%= link_to "View all Premium Articles", premium_listings_path, class: "mr-2 container mx-auto text-xl max-w-sm inline-block mt-6 mb-2" %>  
   </div>
 </div>

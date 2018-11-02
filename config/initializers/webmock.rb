@@ -1,6 +1,4 @@
-if Rails.env == 'test'
-  require 'webmock'
-  include WebMock::API
+require 'webmock'
+include WebMock::API
 
-  WebMock.allow_net_connect!
-end
+WebMock.allow_net_connect!
